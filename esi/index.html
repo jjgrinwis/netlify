@@ -1,0 +1,20 @@
+<table>
+	<tr>
+		<td>
+			ESI test, header body footer
+		</td>
+		<td>
+			<table>
+				<tr><td>
+					<esi:include src=“http://www.foo.com/get_ad_1.html” onerror=“continue”/>
+				</td></tr>
+				<tr><td>
+					<esi:include src=“http://www.foo.com/get_ad_2.html” onerror=“continue”/>
+				</td></tr>
+				<tr><td>
+					<esi:include src=“http://www.foo.com/get_ad_2.html” onerror=“continue”/>
+				</td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
