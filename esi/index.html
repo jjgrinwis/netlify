@@ -7,7 +7,13 @@
 	<iframe frameBorder="1" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" src="https://email.hunkemoller.com/optiext/optiextension.dll?ID=Mf2iBv%2BsD5l2IXkOb6krbbx4NGwJ1cBfBPdkFfIxK0tB47gqz4gBSVD%2BKEQEC2eIT3qRm3jkuWSZTr37Mb2MMr"></iframe>
 	<esi:vars>
 	<h1>
-		User agent: $(HTTP_USER_AGENT)
+		<p>
+			User agent: $(HTTP_USER_AGENT)
+		</p>
+		<p>
+			query string: $(QUERY_STRING{’ID’})
+		</p>
+	</h1>
 	</h1>
 	</esi:vars>
 	<esi:include src="http://images.grinwis.com/hunke/footer.html"/>
