@@ -1,9 +1,13 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Hunkemölle</title>
+	<title>Hunkemöller</title>
 </head>
 <body>
-   <iframe title="Hunkemöller" style="overflow:hidden;height:100%;width:100%;border:none" src="https://email.hunkemoller.com/optiext/optiextension.dll?ID=Mf2iBv%2BsD5l2IXkOb6krbbx4NGwJ1cBfBPdkFfIxK0tB47gqz4gBSVD%2BKEQEC2eIT3qRm3jkuWSZTr37Mb2MMr"></iframe>
+	<esi:include src="http://images.grinwis.com/hunke/header.html"/>
+	<esi:vars>
+		<iframe title="Hunkemöller" style="overflow:hidden;height:100%;width:100%;border:none" src="https://email.hunkemoller.com/optiext/optiextension.dll?ID=$(QUERY_STRING{'ID'})"></iframe>
+	</esi:vars>
+	<esi:include src="http://images.grinwis.com/hunke/footer.html"/>
 </body>
 </html>
