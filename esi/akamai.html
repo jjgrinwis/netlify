@@ -1,0 +1,3486 @@
+
+
+
+
+
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="nl-NL" dir="ltr"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 oldie" lang="nl-NL" dir="ltr"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 oldie" lang="nl-NL" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="nl-NL" dir="ltr"> <!--<![endif]-->
+<head>
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/htmlhead.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/htmlhead.isml" -->
+
+
+<meta charset=UTF-8>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Lato:100,300,700,100italic,300italic:latin', 'Crete+Round:400,400italic:latin' ] }
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+<title>Hunkemoller! - akamai</title>
+
+<link href="/on/demandware.static/Sites-hunkemoller-Site/-/default/dw844e4e3e/images/favicon.png" rel="shortcut icon" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/ui/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/plyr/plyr.min.css"></script>
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/photoswipe.css"></script>
+
+
+
+<meta name="description" content=""/>
+<meta name="theme-color" content="#fabfc0">
+<meta name="msapplication-navbutton-color" content="#fabfc0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#fabfc0">
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/htmlhead_UI.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/htmlhead_UI.isml" -->
+
+
+
+
+<!--[if lt IE 9]>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/js/lib/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() {
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
+</script><script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bchl-hunkemoller';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		  CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  CQuotient.cquid=c.substring('cquid='.length,c.length);
+		  break;
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ productData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.product = productData;
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+<!-- UI -->
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/css/style.css" />
+
+
+<!--[if lte IE 8]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js" type="text/javascript"></script>
+<![endif]-->
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/hreflangs.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/hreflangs.isml" -->
+
+
+        <link rel="alternate" hreflang="nl-nl" href="http://dev.hunkemoller.de/akamai.html" />
+
+        <link rel="alternate" hreflang="x-default" href="http://dev.hunkemoller.de/akamai.html" />
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/canonicallink.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/canonicallink.isml" -->
+
+
+    <link rel="canonical" href="http://dev.hunkemoller.de/akamai.html" />
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/opengraphmeta.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/opengraphmeta.isml" -->
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+if (window.jQuery) {
+jQuery(document).ready(function(){
+if(screen.width < 768){
+jQuery('#footer').append('<a href="/" class="full-site-link">View Full Site</a>');
+jQuery('.full-site-link')
+.attr('href', '/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Home-FullSite')
+.click(function(e) {
+e.preventDefault();
+jQuery.ajax({
+url: '/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Home-FullSite',
+success: function(){
+window.location.reload();
+}
+});
+}
+);
+}
+});
+}
+</script>
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/pt_content_UI.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/pt_content_UI.isml" -->
+
+
+
+
+<meta name="rqid" content="RRRRRRRRRRRRRRRR"/><link type="text/css" href="/on/demandware.static/Sites-Site/-/-/internal/css/dwux-sf-15.5.css?v=17.1" rel="stylesheet" /></head>
+<body class="p-content"><iframe src="http://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/__SYSTEM__StorefrontToolkit-Start" width="0px" height="0px" id="DW-SFToolkit"></iframe>
+<span id="DW-SFToolkit-config" data-data="{&quot;baseURL&quot;:&quot;/on/demandware.static/Sites-Site/-/-/internal/&quot;,&quot;editURL&quot;:&quot;https://dev.hunkemoller.de/on/demandware.store/Sites-Site/-/&quot;,&quot;site&quot;:&quot;hunkemoller&quot;,&quot;cp&quot;:{&quot;serverDateTimePattern&quot;:&quot;yyyyMMddHHmm&quot;,&quot;datePattern&quot;:&quot;dd.MM.yyyy&quot;,&quot;timePattern&quot;:&quot;HH:mm&quot;}}" ></span>
+<script type="application/javascript" src="http://dev.hunkemoller.de/on/demandware.static/Sites-Site/-/-/internal/jscript/dwux-init.js?v=16.7.3"></script><!-- dwMarker="dw-object-page" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/content/contentpage.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Show&quot;,&quot;PageProcessingTime&quot;:138,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentpage.isml (app_storefront_core_ext)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Show (app_storefront_controllers)&quot;}" --><!-- dwMarker="page" dwPipelineTitle="Page-Show (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Show" dwIsController="true" dwTemplateTitle="/default/content/content/contentpage.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/content/contentpage.isml" -->
+<div id="wrapper" class="pt_content">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/header.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/header.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="b-header js-header" role="banner">
+<div class="b-header-top_bar">
+
+<div class="b-header-promotion js-header_promotion">
+<div class="grid-container">
+<!-- dwMarker="slot" dwContentID="header-banner" dwContext="global"-->
+
+
+
+
+
+<div class="html-slot-container">
+
+<div class="js-carousel" data-slick='{
+    &quot;fade&quot;: true,
+    &quot;autoplay&quot;: true,
+    &quot;autoplaySpeed&quot;: 2000,
+    &quot;infinite&quot;: true,
+    &quot;cssEase&quot;: &quot;linear&quot;
+}'>
+
+<div class="b-header-promotion_content">
+    <a href="http://dev.hunkemoller.de/"><strong>FREE 2-Day SHIPPING</strong> FOR ORDERS OVER $300</a>
+</div>
+<div class="b-header-promotion_content">
+    <a href="http://dev.hunkemoller.de/">Buy 2 shorts and get 1 for free</a>
+</div>
+<div class="b-header-promotion_content">
+    <a href="http://dev.hunkemoller.de/">Buy shoes and get towel as a gift</a>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+<div class="b-header-top_section js-header_top_section h-show_only-phones">
+<div class="b-header-top_logo m-mobile_logo">
+<a class="h-show_only-phones" href="/">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:9,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="b8190a61ebcd386eb2ae696511" -->
+<img alt="Hunkemoller logo" src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dwd468292f/images/logo.png" />
+</div> <!-- End content-asset -->
+
+
+
+
+
+</a>
+</div>
+</div>
+<div class="grid-container">
+<div class="b-header-top_logo hidden-xs">
+<a class="b-header-top_logo_link h-hide-phones" href="/">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:6,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="66a1fcce63770e72cf61f969a9" -->
+<img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw2df60064/images/header-logo.png" alt="Hunkemoller menu" />
+</div> <!-- End content-asset -->
+
+
+
+
+
+</a>
+</div>
+<div class="l-top_navigation">
+<div class="b-top_navigation">
+<div class="b-top_navigation_left h-hide-phones">
+
+<div class="b-top_navigation-item">
+<a class="b-top_navigation-link m-store_locator" href="http://dev.hunkemoller.de/stores">
+<span class="b-top_navigation-label h-hide-phones">Stores</span>
+</a>
+</div>
+</div>
+<div class="b-top_navigation_right">
+
+<div class="b-top_navigation-item h-show_only-phones">
+<button class="b-top_navigation-link m-header_hamburger js-menu_toggle">
+Menu
+</button>
+</div>
+
+<div class="b-top_navigation-item h-show_only-phones">
+<a class="b-top_navigation-link m-store_locator" href="http://dev.hunkemoller.de/stores">
+<span class="b-top_navigation-label h-hide-phones">Stores</span>
+</a>
+</div>
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/headercustomerinfo.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Home.js&amp;start=IncludeHeaderCustomerInfo&quot;,&quot;PageProcessingTime&quot;:9,&quot;TemplateTitle&quot;:&quot;/default/components/header/headercustomerinfo.isml (app_storefront_core_ext)&quot;,&quot;PipelineTitle&quot;:&quot;Home-IncludeHeaderCustomerInfo (app_storefront_core_ext)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Home-IncludeHeaderCustomerInfo (app_storefront_core_ext)" dwPipelineURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Home.js&start=IncludeHeaderCustomerInfo" dwIsController="true" dwTemplateTitle="/default/components/header/headercustomerinfo.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/headercustomerinfo.isml" --><div class="b-top_navigation-item ">
+<a class="b-top_navigation-link m-header-account" href="https://dev.hunkemoller.de/account">
+<span class=" ">
+
+</span>
+<span class="b-top_navigation-label">
+Login
+</span>
+</a>
+</div>
+
+<div class="b-top_navigation-item h-hide-phones">
+<a class="b-top_navigation-link m-header-wishlist js-navigation-wishlist-icon" href="https://dev.hunkemoller.de/wishlist">
+<span class="js-wishlist_qty ">
+
+</span>
+<span class="b-top_navigation-label">
+Wishlist
+</span>
+</a>
+</div>
+
+
+<div class="hidden js-page-context"
+data-page-context='{
+"analytics" : {
+"user" : {&quot;ecomStore&quot;:&quot;Demandware&quot;,&quot;isCustomerAuthenticated&quot;:false}
+}
+}'>
+</div>
+
+
+<div class="b-top_navigation-item h-show_only-phones">
+<button class="b-top_navigation-link m-mobile_search js-navigation_search">
+</button>
+</div>
+
+<div class="b-top_navigation-item m-minicart">
+<div id="mini-cart" class="js-mini_cart b-minicart">
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/reporting/ReportBasket.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/reporting/ReportBasket.isml" -->
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/reporting/ReportSourceCodes.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/reporting/ReportSourceCodes.isml" -->
+
+
+<!-- Report any requested source code -->
+
+<!-- Report the active source code -->
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/checkout/cart/minicart.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Cart.js&amp;start=MiniCart&quot;,&quot;PageProcessingTime&quot;:22,&quot;TemplateTitle&quot;:&quot;/default/checkout/cart/minicart.isml (app_storefront_core_ext)&quot;,&quot;PipelineTitle&quot;:&quot;Cart-MiniCart (app_storefront_core_ext)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Cart-MiniCart (app_storefront_core_ext)" dwPipelineURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Cart.js&start=MiniCart" dwIsController="true" dwTemplateTitle="/default/checkout/cart/minicart.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/checkout/cart/minicart.isml" --><div class="b-minicart-wrapper">
+
+<a class="b-minicart-link m-header-minicart js-mini_cart-link" href="https://dev.hunkemoller.de/cart">
+<span class="b-minicart-quantity m-minicart-empty"></span>
+<span class="b-minicart-label h-hide-phones">
+Basket
+</span>
+</a>
+
+</div>
+<div class="b-minicart_popup js-mini_cart-content">
+
+<div class="b-minicart_popup-content">
+<div class="b-minicart_popup-header">
+<h2 class="b-minicart_popup-title">
+My Basket
+</h2>
+
+<div class="b-minicart_popup-button js-mini_cart-close-button" role="button" title="Close">
+<span class="b-minicart_popup-close"></span>
+<span class="b-minicart_popup-text">Close</span>
+</div>
+</div>
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:5,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="1aa3570e61582d1af001f52ff8" -->
+<div class="b-cart_empty m-minicart">
+    <div class="b-cart_empty-message">
+        <div class="b-cart_empty-message_icon"></div>
+        <div class="b-cart_empty-message_empty">Your basket is empty</div>
+        <a class="b-cart_empty-message_link" href="http://dev.hunkemoller.de/">Start shopping</a>
+    </div>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:7,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="cbf28ad0ef0057b2547705cbec" -->
+<div class="b-banner_cart m-minicart">
+    <a class="b-banner_cart-link" href="#">
+        <img class="b-banner_cart-image" src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw0145214e/images/homepage/car-dresses.jpg" alt="" title="" />
+        <div class="b-banner_cart-text">
+            <div class="b-banner_cart-title">Sunday <br>Funday</div>
+            <div class="b-banner_cart-description">This Sunday -20% off on the loungewear collection</div>
+        </div>
+    </a>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+
+</div>
+</div>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/checkout/cart/bonusdiscountlineitem.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/checkout/cart/bonusdiscountlineitem.isml" -->
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="b-header-menu_bar" role="banner">
+<div class="grid-container">
+<div class="grid-col-12">
+<div class="b-header-middle h-hide-phones">
+
+<h1 class="b-logo">
+<a class="b-logo-link" href="/">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:6,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="b8190a61ebcd386eb2ae696511" -->
+<img alt="Hunkemoller logo" src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dwd468292f/images/logo.png" />
+</div> <!-- End content-asset -->
+
+
+
+
+
+</a>
+</h1>
+<div class="b-quick_search js-header_search">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/search/simplesearch.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/search/simplesearch.isml" -->
+
+<form role="search" class="b-quick_search-form js-search_container" action="/search" method="get" name="simpleSearch">
+<fieldset class="b-quick_search-fields">
+<label class="visually-hidden" for="q">
+Search Catalog
+</label>
+<input type="text" class="b-quick_search-field js-search_input" name="q" value="" autocomplete="off" placeholder="Search" />
+<input type="hidden" name="lang" value="nl_NL"/>
+<button class="b-quick_search-button" type="submit"></button>
+</fieldset>
+</form>
+
+</div>
+</div>
+<div class="b-mobile_search js-header_search h-show_only-phones">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/search/simplesearch.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/search/simplesearch.isml" -->
+
+<form role="search" class="b-quick_search-form js-search_container" action="/search" method="get" name="simpleSearch">
+<fieldset class="b-quick_search-fields">
+<label class="visually-hidden" for="q">
+Search Catalog
+</label>
+<input type="text" class="b-quick_search-field js-search_input" name="q" value="" autocomplete="off" placeholder="Search" />
+<input type="hidden" name="lang" value="nl_NL"/>
+<button class="b-quick_search-button" type="submit"></button>
+</fieldset>
+</form>
+
+</div>
+</div>
+</div>
+<div class="grid-container">
+<nav id="navigation" class="js-navigation b-header-categories_nav">
+<div class="b-header-res_controls js-res_controls h-show_only-phones">
+<button class="b-header-control_button m-back js-navigation_back">
+Back
+</button>
+<span class="b-header-navigation_title js-navigation_header">
+Menu
+</span>
+<button class="b-header-control_button m-close m-header_hamburger_close js-menu_toggle">
+Close
+</button>
+</div>
+
+<div class="b-header-categories_nav_wrap js-categories_nav-wrap">
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/headermenu.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Home.js&amp;start=IncludeHeaderMenu&quot;,&quot;PageProcessingTime&quot;:245,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/components/header/headermenu.isml (app_storefront_core_ext)&quot;,&quot;PipelineTitle&quot;:&quot;Home-IncludeHeaderMenu (app_storefront_core_ext)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Home-IncludeHeaderMenu (app_storefront_core_ext)" dwPipelineURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/Home.js&start=IncludeHeaderMenu" dwIsController="true" dwTemplateTitle="/default/components/header/headermenu.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/headermenu.isml" --><ul class="b-categories_nav m-level_1 js-categories_nav">
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/neuheiten" data-name="Nieuw">
+<span class="b-categories_nav-title">
+Nieuw
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Bestsellers
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/neuheiten/limited-editions">
+Limited Editions
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-10"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/bhs" data-name="Bh's">
+<span class="b-categories_nav-title">
+Bh&#39;s
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/alle-bhs">
+Alle Bh&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/push-up-bhs-%26-maximizer-bhs">
+Push-Up &amp; Maximizer Bh&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/tr%C3%A4gerlose-bhs">
+Strapless Bh&rsquo;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/sport-bhs">
+Sports Bras
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Model
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/bralettes">
+Bralettes
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/vorgeformte-bhs">
+Voorgevormde Bh&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/unwattierte-bhs">
+Niet-Voorgevormde Bh&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/bougel-bhs">
+Beugel Bh&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/bhs-ohne-bougel">
+Bh&#39;s Zonder Beugel
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Sexy Shapes
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/beautiful-balcony">
+Beautiful Balcony
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/delicious-demi">
+Delicious Demi
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/fabulous-full-cup">
+Fabulous Full Cup
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/perfect-plunge">
+Perfect Plunge
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/bhs/favourite-fits">
+Favourite Fits
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Hulp &amp; Advies
+</h3>
+
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-4"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/dessous" data-name="Lingerie">
+<span class="b-categories_nav-title">
+Lingerie
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Bestsellers
+</h3>
+
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Collecties
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/dessous/private-collection">
+Private Collection
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/dessous/shapewear">
+Shapewear
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-6"></div>
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/navigationbanner.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/content/navigationbanner.isml" -->
+
+
+
+
+
+<div class="grid-col-2 h-hide-phones">
+<div class="b-banner m-small white">
+
+<picture class="b-banner-background_image">
+    <source media="(max-width: 767px)" srcset="">
+    <source media="(max-width: 1023px)" srcset="">
+    <source media="(max-width: 1439px)" srcset="">
+    <img src="" alt=""/>
+</picture>
+
+
+<div class="b-banner-content">
+
+<h3 class="b-banner-title"></h3>
+
+<p class="b-banner-text"></p>
+
+<a class="b-banner-btn b-btn_light" href="#" title="Shop now">
+Shop now
+</a>
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 m-sale_link">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/slips" data-name="Slips">
+<span class="b-categories_nav-title">
+Slips
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/slips/alle-slips">
+Alle Slips
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/slips/strings">
+Strings
+
+<span class="b-navigation_list-category_icon h-show_only-phones">
+<img alt="Strings" src="http://dev.hunkemoller.de/on/demandware.static/-/Sites-hkm-navigation/nl_NL/v1541078751118/bitmap.png">
+</span>
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/slips/brazilians-%26amp%3B-v-shapes">
+Brazilians &amp; V-Shapes
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Model
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/slips/boxerstrings">
+Boxerstrings
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="grid-col-2">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+</div>
+
+
+<div class="grid-col-4"></div>
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/navigationbanner.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/content/navigationbanner.isml" -->
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/search?cgid=403" data-name="Private">
+<span class="b-categories_nav-title">
+Private
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/search?cgid=477">
+Sexy Bh&#39;s
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Inspiratie
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/search?cgid=413">
+Stoute Lingerie
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="grid-col-2">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+</div>
+
+
+<div class="grid-col-4"></div>
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/navigationbanner.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/content/navigationbanner.isml" -->
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/nachtw%C3%A4sche" data-name="Nachtmode">
+<span class="b-categories_nav-title">
+Nachtmode
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/alle-nachtw%C3%A4sche">
+Alle Nachtmode
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/babydolls-%26amp%3B-nachthemden">
+Slipdresses &amp; Babydolls
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/bodies">
+Body&#39;s &amp; Bustiers
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/badem%C3%A4ntel">
+Badjassen
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/pantoffeln">
+Pantoffels
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/socken">
+Sokken
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Pyjama&#39;s
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/pyjamas-2">
+Pyjama&#39;s
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/tops">
+Tops &amp; T-shirts
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/nachtw%C3%A4sche/hosen">
+Broeken
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Promoties
+</h3>
+
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-6"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/sport" data-name="Sport">
+<span class="b-categories_nav-title">
+Sport
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/sport/sport-kollektion">
+Sport Collectie
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/sport/sport-bhs-2">
+Sport Bh&#39;s
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Sport Bh&#39;s
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/sport/sport-bh%3A-level-2">
+Sport Bh: Level 2
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-8"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/stroumpfe" data-name="Beenmode">
+<span class="b-categories_nav-title">
+Beenmode
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/alle-strumpfwaren">
+Alle Beenmode
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/strapse">
+Jarretels
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/stockings">
+Stockings
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/stay-ups">
+Stay ups
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/strumpfhosen">
+Panty&#39;s
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Collecties
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/stroumpfe/sexy-strumpfwaren">
+Sexy Beenmode
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-8"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+<li class="b-categories_nav-item js-navigation_wrapper_level_1 ">
+<a class="b-categories_nav-link js-navigation_level_1 " href="http://dev.hunkemoller.de/accessoires" data-name="Accessoires">
+<span class="b-categories_nav-title">
+Accessoires
+</span>
+</a>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/categoryflyout.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/categoryflyout.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="b-categories_nav-level_2 js-navigation_level_2">
+<div class="grid-row">
+
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Per Stijl
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/accessoires/alle-accessoires">
+Alle Accessoires
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Collecties
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/accessoires/sexy-accessoires">
+Sexy Accessoires
+
+</a>
+</li>
+
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/accessoires/strand-accessoires">
+Strandaccessoires
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="grid-col-2">
+
+<div class="b-navigation_list">
+<h3 class="b-navigation_list-title">
+Promoties
+</h3>
+
+
+<ul class="b-navigation_list-items">
+
+
+<li class="b-navigation_list-item">
+<a class="b-navigation_list-link " href="http://dev.hunkemoller.de/search?cgid=583">
+2e Beauty Artikel -50%
+
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="grid-col-6"></div>
+
+
+</div>
+
+</div>
+
+
+</li>
+
+</ul>
+
+
+</div>
+</nav>
+</div>
+</div>
+</header><!-- /header -->
+
+<div id="main" role="main" class="l-wrapper">
+<div class="l-content">
+<div class="l-content-breadcrumbs">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/breadcrumbs.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/breadcrumbs.isml" -->
+
+
+<div class="grid-container">
+<ul class="b-breadcrumbs">
+
+
+<li class="b-breadcrumbs-element">
+
+<a class="b-breadcrumbs-link" href="https://dev.hunkemoller.de/" title="Go to Home" title="Home">Home</a>
+
+</li>
+
+
+
+
+
+</ul>
+</div>
+
+</div>
+<div class="l-content-wrapper">
+<!-- dwMarker="decorator" dwTemplateTitle="/default/content/pt_content.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/content/pt_content.isml" -->
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<div class="content-asset"><!-- dwMarker="content" dwContentID="167174ff457d91a5e6df54359a" -->
+<div id="put-content-here"></div>
+</div> <!-- End content-asset -->
+
+
+
+
+</div>
+</div>
+</div><!-- /main -->
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/footer/footer.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/footer/footer.isml" -->
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="l-footer">
+<div class="grid-container">
+<div class="b-footer_main">
+<div class="grid-row m-tablet-row">
+<div class="grid-col-3 grid-col-12--tablet">
+<div class="b-footer_info">
+<div class="b-footer_socials grid-col-4--tablet grid-col-12--phone">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:7,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="9f8785b429e1147ba87a80c246" -->
+<h4>Follow us</h4>
+<ul class="b-social_links">
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_facebook" title="Go to Facebook" href="https://www.facebook.com/demandware" target="_blank"><span class="visually-hidden">Facebook</span></a></li>
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_pinterest" title="Go to Pinterest" href="https://www.pinterest.com" target="_blank"><span class="visually-hidden">Pinterest</span></a></li>
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_twitter" title="Go to Twitter" href="https://twitter.com/demandware" target="_blank"><span class="visually-hidden">Twitter</span></a></li>
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_instagram" title="Go to Instagram" href="https://www.instagram.com" target="_blank"><span class="icon-icon-5"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="visually-hidden">Instagram</span></a></li>
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_youtube" title="Go to YouTube" href="https://www.youtube.com/user/demandware" target="_blank"><span class="visually-hidden">YouTube</span></a></li>
+    <li class="b-social_links-item"><a class="b-social_links-link m-social_alert" title="Go to Icon" href="https://www.google.com" target="_blank"><span class="visually-hidden">Icon</span></a></li>
+</ul>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+<div class="b-footer_subscribe grid-col-4--tablet">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:7,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="865cbf19d3b68f8cb6d91fff91" -->
+<h4>Let's stay in touch!</h4>
+<a href="#" class="b-footer_subscribe-button">
+    <div class="b-footer_subscribe-text">Subscribe now</div>
+</a>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+<div class="b-footer_app grid-col-4--tablet">
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modules.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/modules.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/modulesadditional.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/util/modulesadditional.isml" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:7,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="6fa6a89d925e3816e214b5f71c" -->
+<h4>Download the Hunkemöller app</h4>
+<div class="b-footer_app-content">
+    <a href="#" class="b-footer_app-link m-app_apple">App store</a>
+    <a href="#" class="b-footer_app-link m-app_google">Google play</a>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+
+</div>
+</div>
+</div>
+<div class="js-accordion grid-col-9 grid-col-12--tablet" data-accordion-options='{"initOnDevice": ["mobile"]}'>
+<div class="b-footer_nav grid-row">
+<div class="grid-col-4">
+<div class="b-footer_nav-item">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:38,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="87e4a5fd3201a6a9cc6437cdaf" -->
+<div class="b-navigation_list">
+    <h4 class="b-navigation_list-title js-accordion-header">
+        About us
+    </h4>
+    <div class="b-navigation_list-content js-accordion-item">
+        <ul class="b-navigation_list-items">
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Jobs</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Corporate Info</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Corporate Social Responsibility</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Our Models</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">PR</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="http://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/CustomerService-AboutUs"><!-- dwMarker="link" dwPipelineTitle="CustomerService-AboutUs (app_storefront_core_ext)" dwIsController="true" dwPipelineURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/controllers/CustomerService.js&amp;start=AboutUs" -->About us</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Blog</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+</div>
+<div class="grid-col-4">
+<div class="b-footer_nav-item">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:9,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="7a4221a7e9ab50376ac55d92e5" -->
+<div class="b-navigation_list">
+    <h4 class="b-navigation_list-title js-accordion-header">
+         Customer services
+    </h4>
+    <div class="b-navigation_list-content js-accordion-item">
+        <ul class="b-navigation_list-items">
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="http://dev.hunkemoller.de/faq">FAQ</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="http://dev.hunkemoller.de/contactus">Contact</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Hunkemöller Member Card</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Shipping & Delivery</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Payment & Vouchers</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Returns & Refunds</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Hunkemöller App</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="http://dev.hunkemoller.de/page-customer-service.html">Customer service</a></li>
+        </ul>
+    </div>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+</div>
+<div class="grid-col-4">
+<div class="b-footer_nav-item m-last_nav">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:7,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="a18b92c8f496f5c57170bd0ce6" -->
+<div class="b-navigation_list">
+    <h3 class="b-navigation_list-title js-accordion-header">
+        Tips & Advice
+    </h3>
+    <div class="b-navigation_list-content js-accordion-item">
+        <ul class="b-navigation_list-items">
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">The Perfect Fit</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Sexy Shapes</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Discover your Favourite Fit</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">About Lingerie</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Bra Solutions tool</a></li>
+            <li class="b-navigation_list-item"><a class="b-navigation_list-link" href="#">Care Advice</a></li>
+        </ul>
+    </div>
+</div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid-container">
+<div class="b-footer_add">
+<div class="b-footer_add-content">
+<div class="grid-row m-row-flex m-tablet-row">
+<div class="b-footer_payment grid-col-3 grid-col-6--tablet">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:10,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="83fb2358a41ce2efbd6f7c0279" -->
+<ul class="b-footer_payment-content">
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dwa85433e4/images/pay-1.png" alt="" class="b-footer_payment-image"></li>
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw37fad168/images/pay-2.png" alt="" class="b-footer_payment-image"></li>
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw3169b2cd/images/pay-3.png" alt="" class="b-footer_payment-image"></li>
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw21c27e20/images/pay-4.png" alt="" class="b-footer_payment-image"></li>
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dwd238863f/images/pay-5.png" alt="" class="b-footer_payment-image"></li>
+    <li class="b-footer_payment-item"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw4c5d23da/images/pay-6.png" alt="" class="b-footer_payment-image"></li>
+</ul>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+<div class="b-footer_delivery grid-col-4 grid-col-6--tablet grid-col-1-offset">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:9,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="71dda1c2e30d06fe59e8abe1a3" -->
+<ul class="b-footer_delivery-content">
+    <li class="b-footer_delivery-item m-item_1"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw508cc961/images/delivery-1.png" alt="" class="b-footer_delivery-image"></li>
+    <li class="b-footer_delivery-item m-item_2"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw4674a97b/images/delivery-2.png" alt="" class="b-footer_delivery-image"></li>
+    <li class="b-footer_delivery-item m-item_3"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw88307cf8/images/delivery-3.png" alt="" class="b-footer_delivery-image"></li>
+    <li class="b-footer_delivery-item m-item_4"><img src="http://dev.hunkemoller.de/on/demandware.static/-/Library-Sites-hkm-content-global/default/dw4ad8caf1/images/delivery-4.png" alt="" class="b-footer_delivery-image"></li>
+</ul>
+</div> <!-- End content-asset -->
+
+
+
+
+
+<div class="b-footer_snippet">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:6,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="266a8ba790140037ba7d366627" -->
+<div id="trusted_shops-badge" data-tsid="XCC67D02DEADA0981281543C106EB32C6"></div>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+</div>
+<div class="b-footer_links grid-col-4 m-col-right">
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
+
+
+
+
+
+
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:6,&quot;PageCacheExpires&quot;:&quot;03.11.2018 07:58&quot;,&quot;TemplateTitle&quot;:&quot;/default/content/content/contentassetinclude.isml (app_storefront_core)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (app_storefront_controllers)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (app_storefront_controllers)" dwPipelineURL="http://localhost:60606/target=/app_storefront_controllers/cartridge/controllers/Page.js&start=Include" dwIsController="true" dwTemplateTitle="/default/content/content/contentassetinclude.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentassetinclude.isml" --><div class="content-asset"><!-- dwMarker="content" dwContentID="88a905c2baee07e4081a0abb16" -->
+<ul class="b-footer_privacy">
+    <li class="b-footer_privacy-item"><a href="http://dev.hunkemoller.de/page-terms.html" class="b-footer_privacy-link">Terms & Conditions</a></li>
+    <li class="b-footer_privacy-item m-privacy_separate">|</li>
+    <li class="b-footer_privacy-item"><a class="privacy-policy" href="http://dev.hunkemoller.de/page-privacy-policy.html">Privacy policy</a></li>
+    <li class="b-footer_privacy-item m-privacy_separate">|</li>
+    <li class="b-footer_privacy-item"><a href="#" class="b-footer_privacy-link">Disclaimer</a></li>
+</ul>
+</div> <!-- End content-asset -->
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/util/reporting/ReportUserRegistration.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/util/reporting/ReportUserRegistration.isml" -->
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/footer/footer_UI.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/footer/footer_UI.isml" -->
+
+<!--[if gte IE 9 | !IE]><!-->
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/weblinc/media-match/master/media.match.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.addListener.js" type="text/javascript"></script>
+<![endif]-->
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/ui/jquery-ui.min.js" type="text/javascript"></script>
+
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/jquery.validate.min.js" type="text/javascript"></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/jquery.zoom.min.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/slick/slick.min.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/nouislider/nouislider.min.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/wnumb/wNumb.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/radialindicator/radialIndicator.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/ellipsis/jquery.ellipsis.min.js" ></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/plyr/plyr.min.js" type="text/javascript"></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/isInViewport.min.js" type="text/javascript"></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/countdown.min.js" type="text/javascript"></script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/lib/jquery/photoswipe.min.js" type="text/javascript"></script>
+<script type="text/javascript"><!-- dwMarker="linclude" dwTemplateTitle="/default/resources/appresources.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/resources/appresources.isml" -->
+
+
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE","COMMON_ERROR_CODES":{"LOGIN_REQUIRED":"LOGIN_REQUIRED","USER_ALREADY_EXISTS":"USER_ALREADY_EXISTS","USER_DOESNT_EXIST":"USER_DOESNT_EXIST","ACCESS_DENIED":"ACCESS_DENIED"}};
+window.Resources = {"I_AGREE":"I Agree","CLOSE":"Close","NO_THANKS":"No, thanks","OK":"OK","ARE_YOU_HUMAN":"Are you a Human Being?","SHIP_QualifiesFor":"This shipment qualifies for","CC_LOAD_ERROR":"Couldn't load credit card!","COULD_NOT_SAVE_ADDRESS":"Could not save address. Please check your entries and try again.","REG_ADDR_ERROR":"Could Not Load Address","BONUS_PRODUCT":"Bonus Product","BONUS_PRODUCTS":"Bonus Products","SELECT_BONUS_PRODUCTS":"Select Bonus Products","SELECT_BONUS_PRODUCT":"product.selectbonusproduct","BONUS_PRODUCT_MAX":"The maximum number of bonus products has been selected. Please remove one in order to add additional bonus products.","BONUS_PRODUCT_TOOMANY":"You have selected too many bonus products. Please change the quantity.","SIMPLE_SEARCH":"Search","SUBSCRIBE_EMAIL_DEFAULT":"Email Address","CURRENCY_SYMBOL":"€","MISSINGVAL":"Please enter {0}","SERVER_ERROR":"Server connection failed!","MISSING_LIB":"jQuery is undefined.","BAD_RESPONSE":"Bad response - parser error!","INVALID_PHONE":"Please specify a valid phone","REMOVE":"Remove","QTY":"Qty","EMPTY_IMG_ALT":"Remove","COMPARE_BUTTON_LABEL":"Compare Items","COMPARE_CONFIRMATION":"This will remove the first product added for comparison. Is that OK?","COMPARE_REMOVE_FAIL":"Unable to remove item from list","COMPARE_ADD_FAIL":"Unable to add item to list","ADD_TO_CART_FAIL":"Unable to add item '{0}' to cart","REGISTRY_SEARCH_ADVANCED_CLOSE":"Close Advanced Search","GIFT_CERT_INVALID":"Invalid gift certificate code.","GIFT_CERT_BALANCE":"Your current gift certificate balance is","GIFT_CERT_AMOUNT_INVALID":"Gift Certificate can only be purchased with a minimum of 5 and maximum of 5000","GIFT_CERT_MISSING":"Please enter a gift certificate code.","INVALID_OWNER":"This appears to be a credit card number. Please enter the name of the card holder.","COUPON_CODE_MISSING":"Please enter a coupon code.","COOKIES_DISABLED":"Please enable cookies in your web browser to improve your shopping experience. Learn more about our <a href=\"#\">Cookies Policy</a>","BML_AGREE_TO_TERMS":"You must agree to the terms and conditions","CHAR_LIMIT_MSG":"{0} characters left","CONFIRM_DELETE":"Do you want to remove this {0}?","TITLE_GIFTREGISTRY":"gift registry","TITLE_ADDRESS":"address","TITLE_CREDITCARD":"credit card","SERVER_CONNECTION_ERROR":"Server connection failed!","IN_STOCK_DATE":"The expected in-stock date is {0}.","ITEM_STATUS_NOTAVAILABLE":"Out of Stock","INIFINITESCROLL":"Show All","STORE_NEAR_YOU":"What's available at a store near you","SELECT_STORE":"Select Store","SELECTED_STORE":"Selected Store","PREFERRED_STORE":"Preferred Store","SET_PREFERRED_STORE":"Set Preferred Store","ENTER_ZIP":"Enter ZIP Code","INVALID_ZIP":"Please enter a valid ZIP Code","SEARCH":"Search","CHANGE_LOCATION":"Change Location","CONTINUE_WITH_STORE":"Continue with preferred store","CONTINUE":"Continue","SEE_MORE":"See More Stores","SEE_LESS":"See Fewer Stores","QUICK_VIEW":"Quick View","QUICK_VIEW_POPUP":"Product Quick View","TLS_WARNING":"We value your security!<br/>We detected that you are using an outdated browser.<br/>Update you browser to continue a secure shopping experience.","VALIDATE_REQUIRED":"This field is required.","VALIDATE_REMOTE":"Please fix this field.","VALIDATE_EMAIL":"Please enter a valid email address.","VALIDATE_URL":"Please enter a valid URL.","VALIDATE_DATE":"Please enter a valid date.","VALIDATE_DATEISO":"Please enter a valid date ( ISO ).","VALIDATE_NUMBER":"Please specify a valid phone number.","VALIDATE_DIGITS":"Please enter only digits.","VALIDATE_CREDITCARD":"Please enter a valid credit card number.","VALIDATE_EQUALTO":"Please enter the same value again.","VALIDATE_MAXLENGTH":"Please enter no more than {0} characters.","VALIDATE_MINLENGTH":"Please enter at least {0} characters.","VALIDATE_RANGELENGTH":"Please enter a value between {0} and {1} characters long.","VALIDATE_RANGE":"Please enter a value between {0} and {1}.","VALIDATE_MAX":"Please enter a value less than or equal to {0}.","VALIDATE_MIN":"Please enter a value greater than or equal to {0}.","VALIDATE_STRING_INVALID":"Please enter valid value","IN_STOCK":"In Stock - Online","QTY_IN_STOCK":"{0} Item(s) in Stock","PREORDER":"Pre-Order","QTY_PREORDER":"{0} item(s) are available for pre-order.","REMAIN_PREORDER":"The remaining items are available for pre-order.","BACKORDER":"Back Order","QTY_BACKORDER":"Back order {0} item(s)","REMAIN_BACKORDER":"The remaining items are available on back order.","NOT_AVAILABLE":"Out of Stock","REMAIN_NOT_AVAILABLE":"The remaining items are currently not available. Please adjust the quantity.","GLOBAL_MENU":"Menu","REGEXP_EMAIL":"^[-!#$%&'*+\\/0-9=?A-Z^_a-z{|}~](\\.?[-!#$%&'*+\\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-?\\.?[a-zA-Z0-9])*\\.[a-zA-Z](-?[a-zA-Z0-9])+$","REGEXP_PHONE":"^[0-9+()-\\s\\+]+$","REGEXP_DE_PHONE":"^([\\+][0-9]{1,3}[ \\.\\-])?([\\(]{1}[0-9]{1,6}[\\)])?([0-9 \\.\\-\\/]{3,20})((x|ext|extension)[ ]?[0-9]{1,4})?$","REGEXP_DE_POSTAL_CODE":"\\b((?:0[1-46-9]\\d{3})|(?:[1-357-9]\\d{4})|(?:[4][0-24-9]\\d{3})|(?:[6][013-9]\\d{3}))\\b","REGEXP_PASSWORD":"^(?=.*[A-Za-z])(?=.*\\d)((?!(<|>|&)).){6,}$","VALIDATE_POSTALCODE":"Please enter a valid Post Code","VALIDATE_EMPTY_EMAIL":"Please enter an email address","ADYEN_CC_VALIDATE":"Please enter a valid credit card information.","VALIDATE_PASSWORD":"Please enter a valid password.","COUNTDOWN_DATE_FORMAT":"%H:%M:%S","COUNTDOWN_DATE_DAY_FORMAT":"%-D day","COUNTDOWN_DATE_DAYS_FORMAT":"%-D days","ADD_TO_WISHLIST":"Add to wishlist","VIEW_WISHLIST":"View wishlist","SHARE_WISHLIST_FORM_TITLE":"Email your wishlist","SHOW_MORE":"Show more","SHOW_LESS":"Show less","SEARCH_FILTERS":"Filters","CART_POPUP_FORM_TITLE":"Email your shopping basket","ALL_STORES":"All stores","SEARCH_RESULT_FOR":"Results for","SHOW_MORE_QUESTIONS":"More questions","SHOW_LESS_QUESTIONS":"Less questions","INVALID_DATE":"Please specify a valid phone","VALIDATE_STREET_INVALID":"Please enter valid value"};
+window.Urls = {"appResources":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Resources-Load","pageInclude":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Page-Include","continueUrl":"http://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Page-Show","staticPath":"/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/","addGiftCert":"/giftcertpurchase","minicartGC":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/GiftCert-ShowMiniCart","addProduct":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-AddProduct","minicart":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-MiniAddProduct","cartShow":"/cart","giftRegAdd":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Address-GetAddressDetails?addressID=","paymentsList":"https://dev.hunkemoller.de/wallet","addressesList":"https://dev.hunkemoller.de/addressbook","wishlistAddress":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Wishlist-SetShippingAddress","deleteAddress":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Address-Delete","getProductUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-Show","getBonusProducts":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-GetBonusProducts","addBonusProduct":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-AddBonusProduct","getSetItem":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-GetSetItem","productDetail":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-Detail","getAvailability":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-GetAvailability","removeImg":"/on/demandware.static/Sites-hunkemoller-Site/-/default/dwc8e53f09/images/icon_remove.gif","searchsuggest":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Search-GetSuggestions","productNav":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Product-Productnav","summaryRefreshURL":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-UpdateSummary","billingSelectCC":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-SelectCreditCard","updateAddressDetails":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COShipping-UpdateAddressDetails","updateAddressDetailsBilling":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-UpdateAddressDetails","shippingMethodsJSON":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COShipping-GetApplicableShippingMethodsJSON","shippingMethodsList":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COShipping-UpdateShippingMethodList","selectShippingMethodsList":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COShipping-SelectShippingMethod","resetPaymentForms":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-ResetPaymentForms","compareShow":"/compare","compareAdd":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Compare-AddProduct","compareRemove":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Compare-RemoveProduct","compareEmptyImage":"/on/demandware.static/Sites-hunkemoller-Site/-/default/dw4f8f8347/images/comparewidgetempty.png","giftCardCheckBalance":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-GetGiftCertificateBalance","redeemGiftCert":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COBilling-RedeemGiftCertificateJson","addCoupon":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-AddCouponJson","storesInventory":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-Inventory","setPreferredStore":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-SetPreferredStore","getPreferredStore":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-GetPreferredStore","setStorePickup":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-SetStore","setZipCode":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-SetZipCode","getZipCode":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/StoreInventory-GetZipCode","billing":"/billing","setSessionCurrency":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Currency-SetSessionCurrency","addEditAddress":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/COShippingMultiple-AddEditAddressJSON","cookieHint":"/cookie_hint.html","rateLimiterReset":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/RateLimiter-HideCaptcha","csrffailed":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/CSRF-Failed","getPageUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Page-Show","getRecommendationsUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Search-GetRecommendations","changeCartShippingMethodUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-ChangeShippingMethod","deleteProductLineItemUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-DeleteLineItem","setShippingMethod":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-SetShippingMethod","getServicePointsUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-GetServicePoints","submitCheckoutUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-Submit","updateSummaryUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-UpdateSummary","updateLoyaltyStatus":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-UpdateLoyaltyStatus","getMelissaToken":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Melissa-GetToken","addressVerification":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Melissa-AddressVerification","getStoresJSON":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Stores-GetStoresJSON","getGeolocation":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Stores-GetGeolocation","googlemapsAPIUrl":"https://maps.googleapis.com/maps/api/js","mapClusterIcon":"/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/images/googlemaps/cluster","mapFlagshipIcon":"/on/demandware.static/Sites-hunkemoller-Site/-/default/dw5b896a6b/images/googlemaps/marker-flagship.png","mapNormalIcon":"/on/demandware.static/Sites-hunkemoller-Site/-/default/dwd37d6524/images/googlemaps/marker-normal.png","mapHkmxIcon":"/on/demandware.static/Sites-hunkemoller-Site/-/default/dw078413f0/images/googlemaps/marker-hkmx.png","useLoyaltyBalance":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-UseLoyaltyBalance","adyenCSE":"https://test.adyen.com/hpp/cse/js/8215377794013976.shtml","getPostcodeAddress":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Postcode-GetAddress","updateCartSummaryUrl":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Cart-UpdateCartSummary","checkoutSelectCC":"https://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Checkout-SelectCreditCard","storesFind":"http://dev.hunkemoller.de/stores","updateEmailSubscription":"/on/demandware.store/Sites-hunkemoller-Site/nl_NL/Account-UpdateEmailSubscription"};
+window.SitePreferences = {"LISTING_INFINITE_SCROLL":true,"LISTING_REFINE_SORT":true,"STORE_PICKUP":true,"COOKIE_HINT":false,"CHECK_TLS":false,"COOKIE_MESSAGE_TIME":"365","WISHLIST_DIALOG_DELAY":3000,"MELISSA_ENABLED_LOCALES":"","MELISSA_BASE_URL":"https://services.blue-sail.net","POSTCODE_ENABLED_LOCALES":"nl_NL","SIZECHART_CUP_SIZE_INDEX":"AA,A,B,C,D,E,F,G,H","SIZECHART_BAND_SIZE_INDEX":"[\"NL|DK|DE|LUX|BE|AT\",\"FR|ES\",\"UK\"]","SIZECHART_CONFIG":"{\"63-67\":{\"cup_size\":[\"75\",\"77.5\",\"80\"],\"band_size\":[\"65\",\"80\",\"30\"]},\"68-72\":{\"cup_size\":[\"80\",\"82.5\",\"85\",\"87.5\",\"90\",\"92.5\",\"95\",\"97.5\",\"100\",\"102.5\",\"105\"],\"band_size\":[\"70\",\"85\",\"32\"]},\"73-77\":{\"cup_size\":[\"85\",\"87.5\",\"90\",\"92.5\",\"95\",\"97.5\",\"100\",\"102.5\",\"105\"],\"band_size\":[\"75\",\"90\",\"34\"]},\"78-82\":{\"cup_size\":[\"90\",\"92.5\",\"95\",\"97.5\",\"100\",\"102.5\",\"105\",\"107.5\",\"110\"],\"band_size\":[\"80\",\"95\",\"36\"]},\"83-87\":{\"cup_size\":[\"95\",\"97.5\",\"100\",\"102.5\",\"105\",\"107.5\",\"110\",\"112.5\",\"115\"],\"band_size\":[\"85\",\"100\",\"38\"]},\"88-92\":{\"cup_size\":[\"100\",\"102.5\",\"105\",\"107.5\",\"110\",\"112.5\",\"115\",\"117.5\",\"120\"],\"band_size\":[\"90\",\"105\",\"40\"]},\"93-97\":{\"cup_size\":[\"105\",\"107.5\",\"110\",\"112.5\",\"115\",\"117.5\",\"120\",\"122.5\",\"125\"],\"band_size\":[\"95\",\"110\",\"42\"]},\"98-102\":{\"cup_size\":[\"110\",\"112.5\",\"115\",\"117.5\",\"120\",\"122.5\",\"125\",\"127.5\",\"130\"],\"band_size\":[\"100\",\"115\",\"44\"]},\"103-107\":{\"cup_size\":[\"115\",\"117.5\",\"120\",\"122.5\",\"125\",\"127.5\",\"130\",\"132.5\",\"135\"],\"band_size\":[\"105\",\"120\",\"46\"]},\"108-112\":{\"cup_size\":[\"120\",\"122.5\",\"125\",\"127.5\",\"130\",\"132.5\",\"135\",\"137.5\",\"140\"],\"band_size\":[\"110\",\"125\",\"48\"]}}","SIZECHART_LETTER_FIRST":"NL,DK,DE,LUX,BE,AT","SIZECHART_SIZE_PLACEHOLDER":"Size","CURRENT_COUNTRY":"NL","STORE_PIN_WIDTH":"28","STORE_PIN_HEIGHT":"47","LOCALE":"nl_NL","GOOGLE_API_KEY":"AIzaSyCVxEJXteMUc9fGNpS2A5oWHDc5_j58O-o","GOOGLE_MAPS_REGION":"{\"de_DE\": \"de\", \"nl_NL\": \"nl\"}","MAP_COUNTRY_ZOOM":5,"MAP_CITY_ZOOM":10,"MAP_STREET_ZOOM":15,"DEFAULT_MAP_CENTER":{"lat":49.234505500000004,"lng":28.4851982},"STORELOCATOR_STORES_NUMBER":6,"STOREDETAILS_STORES_NUMBER":8,"ADYEN_CSE_ENABLED":true,"GOOGLE_MAP_CITY_URL":"https://www.google.com/maps/search/?api=1&query=","GTM_ENABLED":true,"GTM_ACCOUNT_ID":"GTM-W7J9BG2","OLAPIC_API_KEY":null};
+window.UserSettings = {"zip":null,"storeId":null,"email":"","authenticated":false,"sessionID":"M7Ky3KXbhBra9B1Wxs7tCYref16Vpfrmep4=","signature":"9319beea917071f63462582ce74a5ddb"};
+}());</script>
+<script type="text/javascript">
+
+(function(){
+window.SessionAttributes = {"SHOW_CAPTCHA":null,"CURRENCY_SYMBOL":"€"};
+window.User = {"zip":null,"storeId":null,"email":"","authenticated":false,"sessionID":"M7Ky3KXbhBra9B1Wxs7tCYref16Vpfrmep4=","signature":"9319beea917071f63462582ce74a5ddb"};
+}());
+</script>
+
+<script>pageContext = {"title":"Content","type":"Content","ns":"content","analytics":{"page":{"siteCountry":"Nederland","siteLanguage":"nl_nl","currencyCode":"EUR","pageCategory":"content","subCategory":"content"}}};</script>
+<script>
+var meta = "";
+var keywords = "";
+</script>
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/js/app.js"></script>
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/pt_content_VARS.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/pt_content_VARS.isml" -->
+
+
+
+</div>
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "http://dev.hunkemoller.de/on/demandware.store/Sites-hunkemoller-Site/nl_NL/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/internal/jscript/dwanalytics-18.3.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="http://dev.hunkemoller.de/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1541078751118/internal/jscript/dwac-18.10.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
