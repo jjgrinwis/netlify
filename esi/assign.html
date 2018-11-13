@@ -1,7 +1,4 @@
-<esi:assign name="demo">
-    <esi:include src="http://demo.grinws.com/"/>
-</esi:assign>
-<esi:assign name="test" value="123"></esi:assign>
+<esi:assign name="test" value="'http://demo.grinwis.com/'"></esi:assign>
 <esi:vars>
-    $(demo)
+    <esi:include src="$(test)"/>
 </esi:vars>
