@@ -1,0 +1,190 @@
+
+<meta charset=UTF-8>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lato:100,300,700,100italic,300italic:latin', 'Crete+Round:400,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+
+<link href="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/default/dw844e4e3e/images/favicon.png" rel="shortcut icon" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1543333841002/lib/jquery/ui/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1543333841002/lib/jquery/plyr/plyr.min.css"></script>
+<link rel="stylesheet" type="text/css" href="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1543333841002/lib/jquery/photoswipe.css"></script>
+
+
+<meta name="theme-color" content="#fabfc0">
+<meta name="msapplication-navbutton-color" content="#fabfc0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#fabfc0">
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/vwo/vwo_enabled.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/vwo/vwo_enabled.isml" -->
+
+
+
+
+
+
+
+	<!-- dwMarker="linclude" dwTemplateTitle="/default/vwo/vwo_header.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/vwo/vwo_header.isml" -->
+
+
+	
+
+<script type="text/javascript">
+	var _vis_opt_url = document.location.protocol + "//" + document.location.host + '/home' + document.location.pathname + document.location.search + document.location.hash;
+</script>
+
+
+	<!-- dwMarker="linclude" dwTemplateTitle="/default/vwo/code/async.isml (int_vwo_plugin)" dwTemplateURL="http://localhost:60606/target=/int_vwo_plugin/cartridge/templates/default/vwo/code/async.isml" -->
+
+
+<!-- Start VWO Async Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=271497,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+_vis_opt_url = window._vis_opt_url || document.URL,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(_vis_opt_url)+'&s=dw&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End VWO Async Code -->
+
+
+
+
+
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/components/header/htmlhead_UI.isml (app_storefront_core_ext)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core_ext/cartridge/templates/default/components/header/htmlhead_UI.isml" -->
+
+
+
+
+<!--[if lt IE 9]>
+<script src="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1543333841002/js/lib/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
+</script><script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bchl-hunkemoller';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		  CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  CQuotient.cquid=c.substring('cquid='.length,c.length);
+		  break;
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ productData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.product = productData;
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+
+<!--  UI -->
+
+    <link rel="stylesheet" type="text/css" href="https://stg.hunkemoller.nl/on/demandware.static/Sites-hunkemoller-Site/-/nl_NL/v1543333841002/css/style.css" />
+
+
