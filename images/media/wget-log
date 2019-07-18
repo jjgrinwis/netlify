@@ -1,0 +1,6 @@
+--2019-07-18 10:57:19--  https://firebasestorage.googleapis.com/v0/b/tfactor-7f3fe.appspot.com/o/Amsterdam.jpg?alt=media
+Resolving firebasestorage.googleapis.com (firebasestorage.googleapis.com)... 172.217.19.202, 216.58.208.106, 172.217.17.42, ...
+Connecting to firebasestorage.googleapis.com (firebasestorage.googleapis.com)|172.217.19.202|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2019-07-18 10:57:20 ERROR 403: Forbidden.
+
