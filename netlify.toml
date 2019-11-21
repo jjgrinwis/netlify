@@ -1,4 +1,4 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Edge-Control = "downstream-ttl=3d,maxage=5d"
+    Edge-Control = "downstream-ttl=3d,max-age=5d"
