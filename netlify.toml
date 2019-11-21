@@ -2,4 +2,4 @@
   for = "/cachetest*"
   [headers.values]
     Cache-Control = "max-age=86400, public"
-    Edge-Control = "666"
+    Edge-Control = "max-age=666"
