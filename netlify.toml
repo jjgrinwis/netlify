@@ -1,4 +1,5 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
+    Cache-Control = "max-age=4d"
     Edge-Control = "downstream-ttl=3d,max-age=5d"
