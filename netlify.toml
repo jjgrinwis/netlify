@@ -1,5 +1,4 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Cache-Control = "max-age=518400, public, must-revalidate"
-    Edge-Control = "cache-maxage=7d"
+    Cache-Control = "max-age=518400, public, must-revalidate, s-maxage=864000"
