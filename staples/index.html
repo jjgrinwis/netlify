@@ -1,19 +1,23 @@
 <html>
   <head>
-    Staples Image Manager test
+    <style>
+        img {border:5px solid black;}
+    </style>
   </head>
   <h1>
     Staples image manager policy test via IMquery
   </h1>
   <p>
       <h2>feature crop</h2>
+      The FeatureCrop transformation tries to determine the most important features of the input image and performs a crop around as many of these features as possible.<br>
+      FeatureCrop works very similarly to RegionOfInterestCrop except for the region of interest is specified automatically by the found features instead of manually.
       <p>
           Feature crop (300x300): IMQuery FeatureCrop,width=300,height=300<br>
-        <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300" style="border:5px solid black">
+        <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300"/>
     </p>
     <p>
         Feature crop (300x300) and resize (100) IMQuery im=FeatureCrop,width=300,height=300;Resize=100"<br>
-     <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100" style="border:5px solid black"/>
+     <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100"/>
     </p>
     </p>
 </html>
