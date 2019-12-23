@@ -1,0 +1,6 @@
+2019-11-02 20:03:42,552 - root - INFO - Trying to get contract details from [cps] section of ~/.edgerc file
+2019-11-02 20:03:44,363 - root - INFO - Processing Enrollments for contract: 3-16TWBVX
+2019-11-02 20:04:11,522 - root - INFO - common Name (--cn) or enrollment-id (--enrollment-id) is mandatory
+2019-11-02 20:04:19,504 - root - INFO - Please specify Either --leaf --chain or --info or --json
+2019-11-02 20:04:24,317 - root - INFO - Unable to find enrollments.json file. Please run 'setup'
+2019-11-02 20:07:01,556 - root - INFO - Invalid API Response (500): Could not list enrollments. Please ensure you have run 'setup' to populate the local enrollments.json file
