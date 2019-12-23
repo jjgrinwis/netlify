@@ -1,29 +1,55 @@
 <html>
   <head>
     <style>
-        img {border:5px solid black;}
+      img {
+        border: 5px solid black;
+      }
     </style>
   </head>
   <h1>
     Staples image manager policy test via IMquery
+    <a
+      href="https://learn.akamai.com/en-us/webhelp/image-manager/image-optimization/GUID-16E858B9-99C8-4893-8BDF-35B77B3C74AA.html"
+      >See learn.akamai.com for all available image transformation options</a
+    >
   </h1>
+  <p></p>
+  <h2>Feature Crop</h2>
+  The FeatureCrop transformation tries to determine the most important features
+  of the input image and performs a crop around as many of these features as
+  possible.<br />
+  FeatureCrop works very similarly to RegionOfInterestCrop except for the region
+  of interest is specified automatically by the found features instead of
+  manually.
   <p>
-      <h2>feature crop</h2>
-      The FeatureCrop transformation tries to determine the most important features of the input image and performs a crop around as many of these features as possible.<br>
-      FeatureCrop works very similarly to RegionOfInterestCrop except for the region of interest is specified automatically by the found features instead of manually.
-      <p>
-          Feature crop (300x300): IMQuery FeatureCrop,width=300,height=300<br>
-        <a href="/staples/image2.jpg?im=FeatureCrop,width=300,height=300"> 
-            <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300">
-        </a>
-    </p>
-    <h2>Resize</h2>
-    The Resize transformation is used to resize (change the dimensions of) images. In the exaple only width parameter being used.
-    <p>
-        Feature crop (300x300) and resize (100) IMQuery im=FeatureCrop,width=300,height=300;Resize=100"<br>
-        <a href="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100">
-            <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100">
-        </a>
-    </p>
-    </p>
+    Feature crop (300x300): IMQuery FeatureCrop,width=300,height=300<br />
+    <a href="/staples/image2.jpg?im=FeatureCrop,width=300,height=300">
+      <img src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300" />
+    </a>
+  </p>
+  <h2>Resize</h2>
+  Feature crop with Resize.<br />
+  The Resize transformation is used to resize (change the dimensions of) images.
+  In the exaple only width parameter being used.
+  <p>
+    Resize (100) IMQuery im=Resize=100"<br />
+    <a href="/staples/image2.jpg?im=Resize=100">
+      <img src="/staples/image2.jpg?im=Resize=100" />
+    </a>
+  </p>
+  <h2>FeatureCrop and Resize</h2>
+  Feature crop with Resize.<br />
+  The Resize transformation is used to resize (change the dimensions of) images.
+  In the exaple only width parameter being used.
+  <p>
+    Feature crop (300x300) and resize (100) IMQuery
+    im=FeatureCrop,width=300,height=300;Resize=100"<br />
+    <a
+      href="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100"
+    >
+      <img
+        src="/staples/image2.jpg?im=FeatureCrop,width=300,height=300;Resize=100"
+      />
+    </a>
+  </p>
 </html>
