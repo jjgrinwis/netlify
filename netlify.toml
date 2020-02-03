@@ -2,3 +2,5 @@
   for = "/cachetest*"
   [headers.values]
     Cache-Control = "max-age=518400, public, must-revalidate, s-maxage=864000"
+    Set-Cookie = "GEOIP_COUNTRY_CODE=NL; path=/"
+    Set-Cookie = "GEOIP_CITY_CODE=Medemblik; path=/"
