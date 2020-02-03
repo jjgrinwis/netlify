@@ -1,6 +1,4 @@
 [[headers]]
-  [headers.values]
-    Set-Cookie = "GEOIP_COUNTRY_CODE=NL; path=/"
   for = "/cachetest*"
   [headers.values]
     Cache-Control = "max-age=518400, public, must-revalidate, s-maxage=864000"
