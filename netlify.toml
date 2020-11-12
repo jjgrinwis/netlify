@@ -2,5 +2,4 @@
   for = "/cachetest*"
   [headers.values]
     Cache-Control = "max-age=518400, public, must-revalidate, s-maxage=864000"
-    Edge-Control= "max-age=600"
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.kvk.nl/api/v2/ https://tagmanager.google.com ; manifest-src 'self'"
