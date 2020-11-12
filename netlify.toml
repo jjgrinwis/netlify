@@ -1,4 +1,4 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Edge-Control: "max-age=600"
+    Edge-Control: "max-age=900"
