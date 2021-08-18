@@ -3,3 +3,4 @@
   [headers.values]
     Cache-Control = "s-maxage=300, max-age=150, public"
     Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET"
