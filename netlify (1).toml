@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/cachetest*"
+  [headers.values]
+    Cache-Control = "s-maxage=300, max-age=150, private"
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.kvk.nl/api/v2/ https://tagmanager.google.com ; manifest-src 'self'"

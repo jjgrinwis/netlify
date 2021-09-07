@@ -1,0 +1,236 @@
+[2021-06-07T14:34:36.147] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2021-06-07T14:34:36.149] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'betajam'
+[2021-06-07T14:34:36.149] [INFO] devops-prov.factory - need to create papi
+[2021-06-07T14:34:36.152] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/groups
+[2021-06-07T14:34:36.156] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-jbda6qtoz6ftfrwf-cj5tzdvsr5pj2tdf;access_token=akab-hwlymr2vklkmcmim-ygwssr24gofr3agv;timestamp=20210607T12:34:36+0000;nonce=9cd46980-024d-4646-a003-a6372ab1e5c7;
+
+[2021-06-07T14:34:36.157] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2021-06-07T14:34:36.157] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2021-06-07T14:34:36.157] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-zffdc2nm6rfjyspl-cqrxpsvcy2crfdvc.luna.akamaiapis.net	/papi/v1/groups			EG1-HMAC-SHA256 client_token=akab-jbda6qtoz6ftfrwf-cj5tzdvsr5pj2tdf;access_token=akab-hwlymr2vklkmcmim-ygwssr24gofr3agv;timestamp=20210607T12:34:36+0000;nonce=9cd46980-024d-4646-a003-a6372ab1e5c7;" 
+
+[2021-06-07T14:34:36.158] [INFO] devops-prov.edgegrid.helpers - Signing key: i/j6mKWqgwsy0CW9Yi5OAevjJbrMXnk2bftx+/+5rto=
+
+[2021-06-07T14:34:36.158] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-jbda6qtoz6ftfrwf-cj5tzdvsr5pj2tdf;access_token=akab-hwlymr2vklkmcmim-ygwssr24gofr3agv;timestamp=20210607T12:34:36+0000;nonce=9cd46980-024d-4646-a003-a6372ab1e5c7;signature=x/b4lYLpsG/YHBrpQWwsb9Don4pd0I2l8p0pe7su9Kg=
+
+[2021-06-07T14:34:36.186] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-zffdc2nm6rfjyspl-cqrxpsvcy2crfdvc.luna.akamaiapis.net/papi/v1/groups',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.6-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.6-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-jbda6qtoz6ftfrwf-cj5tzdvsr5pj2tdf;access_token=akab-hwlymr2vklkmcmim-ygwssr24gofr3agv;timestamp=20210607T12:34:36+0000;nonce=9cd46980-024d-4646-a003-a6372ab1e5c7;signature=x/b4lYLpsG/YHBrpQWwsb9Don4pd0I2l8p0pe7su9Kg=',
+    host: 'akab-zffdc2nm6rfjyspl-cqrxpsvcy2crfdvc.luna.akamaiapis.net'
+  }
+}
+[2021-06-07T14:34:37.247] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'a9a1d4f5-1aa2-4f08-8667-eee7db5a2fa4, a9a1d4f5-1aa2-4f08-8667-eee7db5a2fa4',
+    'papi-cache-status': 'CACHE_MISS',
+    etag: '"8fad341d2129c4fb09eb216e89df26811b03e1d9-f6d0284460d92c3f5794d96fb4795bd2135ff0e8-gzip"',
+    vary: 'accept-encoding,x-ids-contract-type-id,pm-settings,accept-encoding,x-ids-current-account-id',
+    'papi-cache-validated': 'NO',
+    'x-trace-id': '9b8460be125c7744',
+    'content-length': '2921',
+    'cache-control': 'must-revalidate, max-age=0',
+    date: 'Mon, 07 Jun 2021 12:34:37 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_B-3-16OEUPX",\n' +
+    '  "accountName" : "Ion Standard Beta Jam 1",\n' +
+    '  "groups" : {\n' +
+    '    "items" : [ {\n' +
+    '      "groupName" : "Edgeconnect Lab",\n' +
+    '      "groupId" : "grp_103489",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "mPulse Lab",\n' +
+    '      "groupId" : "grp_141474",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "DevPoPs Demo - Please do not edit",\n' +
+    '      "groupId" : "grp_118499",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Arnold Slabbekoorn",\n' +
+    '      "groupId" : "grp_108770",\n' +
+    '      "parentGroupId" : "grp_84517",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Kamdar",\n' +
+    '      "groupId" : "grp_122466",\n' +
+    '      "parentGroupId" : "grp_84517",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "IM Lab",\n' +
+    '      "groupId" : "grp_84517",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Metadata Lab",\n' +
+    '      "groupId" : "grp_106598",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "SBD Betajam",\n' +
+    '      "groupId" : "grp_179493",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "bfrancis",\n' +
+    '      "groupId" : "grp_117609",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Cloudlets Lab",\n' +
+    '      "groupId" : "grp_182888",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Pascal Lab",\n' +
+    '      "groupId" : "grp_93139",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "API test",\n' +
+    '      "groupId" : "grp_103415",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "HTTP2 Playground",\n' +
+    '      "groupId" : "grp_73337",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "DS2 Beta Jam",\n' +
+    '      "groupId" : "grp_173720",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "VS Code Betajam",\n' +
+    '      "groupId" : "grp_190104",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Secure By Default",\n' +
+    '      "groupId" : "grp_186526",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "Ion Standard Beta Jam 1-3-16TWBVX",\n' +
+    '      "groupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    }, {\n' +
+    '      "groupName" : "jgrinwis",\n' +
+    '      "groupId" : "grp_189500",\n' +
+    '      "parentGroupId" : "grp_48668",\n' +
+    '      "contractIds" : [ "ctr_3-16TWBVX" ]\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2021-06-07T14:34:37.248] [INFO] devops-prov.openclient - Status code:  200
+[2021-06-07T14:34:37.248] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_B-3-16OEUPX",
+  "accountName" : "Ion Standard Beta Jam 1",
+  "groups" : {
+    "items" : [ {
+      "groupName" : "Edgeconnect Lab",
+      "groupId" : "grp_103489",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "mPulse Lab",
+      "groupId" : "grp_141474",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "DevPoPs Demo - Please do not edit",
+      "groupId" : "grp_118499",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Arnold Slabbekoorn",
+      "groupId" : "grp_108770",
+      "parentGroupId" : "grp_84517",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Kamdar",
+      "groupId" : "grp_122466",
+      "parentGroupId" : "grp_84517",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "IM Lab",
+      "groupId" : "grp_84517",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Metadata Lab",
+      "groupId" : "grp_106598",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "SBD Betajam",
+      "groupId" : "grp_179493",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "bfrancis",
+      "groupId" : "grp_117609",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Cloudlets Lab",
+      "groupId" : "grp_182888",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Pascal Lab",
+      "groupId" : "grp_93139",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "API test",
+      "groupId" : "grp_103415",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "HTTP2 Playground",
+      "groupId" : "grp_73337",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "DS2 Beta Jam",
+      "groupId" : "grp_173720",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "VS Code Betajam",
+      "groupId" : "grp_190104",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Secure By Default",
+      "groupId" : "grp_186526",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "Ion Standard Beta Jam 1-3-16TWBVX",
+      "groupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    }, {
+      "groupName" : "jgrinwis",
+      "groupId" : "grp_189500",
+      "parentGroupId" : "grp_48668",
+      "contractIds" : [ "ctr_3-16TWBVX" ]
+    } ]
+  }
+}
