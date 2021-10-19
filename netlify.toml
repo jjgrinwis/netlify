@@ -1,6 +1,6 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Cache-Control = "s-maxage=300, max-age=150, private"
+    Cache-Control = "s-maxage=600, max-age=150, private"
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET"
