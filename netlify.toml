@@ -2,5 +2,6 @@
   for = "/cachetest*"
   [headers.values]
     Cache-Control = "s-maxage=600, max-age=150, public"
+    Cache-Tag = "purgeme"
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET"
