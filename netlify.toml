@@ -1,12 +1,8 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Cache-Control = "s-maxage=600, max-age=150, public"
+    Content-Security-Policy = "default-src 'self'; img-src *; media-src media1.com media2.com; script-src userscripts.example.com"
+    Cache-Control = "s-maxage=0, max-age=150, public"
     Edge-Cache-Tag = "purgeme"
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET"
-
-  for = "/nocache*"
-  [headers.values]
-    Cache-Control = "no-cache"
-    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
