@@ -1,7 +1,7 @@
 [[headers]]
-  Content-Security-Policy = "https://demo.grinwis.com"
   for = "/cachetest*"
   [headers.values]
+    Content-Security-Policy = "https://demo.grinwis.com"
     Cache-Control = "s-maxage=600, max-age=150, public"
     Edge-Cache-Tag = "purgeme"
     Access-Control-Allow-Origin = "*"
