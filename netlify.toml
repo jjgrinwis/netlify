@@ -1,7 +1,7 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; img-src *; media-src media1.com media2.com; script-src userscripts.example.com"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' https://opendata.nederlandwereldwijd.nl; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://api.contenttoolsrijksoverheid.nl; connect-src 'self' https://api.contenttoolsrijksoverheid.nl;"
     Cache-Control = "s-maxage=0, max-age=150, public"
     Edge-Cache-Tag = "purgeme"
     Access-Control-Allow-Origin = "*"
