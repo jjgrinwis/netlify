@@ -1,28 +1,8 @@
 [[headers]]
   for = "/cachetest*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 
-https://widget-cdn.janraincapture.com/manifest/login 'unsafe-eval' 
-https://*.rpxnow.com 
-https://*.janrain.com 
-https://*.janraincapture.com 
-https://*.cn.janrain.biz 
-https://ssl-static.janraincapture.com 
-https://www.google.com/recaptcha/api.js 'strict-dynamic' 
-https://2441.static-ontw.anwb.nl/public/hosted-login.js 
-https://login-ontw.anwb.nl 'nonce-t8Y945YW-XAILeRD'; style-src 'self' 
-https://quilt-cdn.janrain.com 'unsafe-inline' 
-https://v1.api.us.janrain.com/auth-ui/stati…e.css 
-https://2441.static-ontw.anwb.nl/public/hosted-login.css; img-src data: https:; font-src data:
-https://quilt-cdn.janrain.com 
-https://static.anwb.nl/packages/core-ui/fonts/ANWB-TheSans_6i.woff2 
-https://static.anwb.nl/packages/core-ui/fonts/ANWB-TheSans_7_.woff2 
-https://static.anwb.nl/packages/anwb-icons/ui.woff2; frame-src 
-https://*.janrain.com 
-https://*.janraincapture.com 
-https://www.google.com 
-https://login-ontw.anwb.nl; frame-ancestors 'self' 
-http://localhost:8079; base-uri 'none'; object-src 'none'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://widget-cdn.janraincapture.com/manifest/login 'unsafe-eval' https://*.rpxnow.com https://*.janrain.com https://*.janraincapture.com https://*.cn.janrain.biz https://ssl-static.janraincapture.com https://www.google.com/recaptcha/api.js 'strict-dynamic' https://2441.static-ontw.anwb.nl/public/hosted-login.js https://login-ontw.anwb.nl 'nonce-t8Y945YW-XAILeRD'; style-src 'self' https://quilt-cdn.janrain.com 'unsafe-inline' https://v1.api.us.janrain.com/auth-ui/stati…e.css https://2441.static-ontw.anwb.nl/public/hosted-login.css; img-src data: https:; font-src data: https://quilt-cdn.janrain.com https://static.anwb.nl/packages/core-ui/fonts/ANWB-TheSans_6i.woff2 https://static.anwb.nl/packages/core-ui/fonts/ANWB-TheSans_7_.woff2 https://static.anwb.nl/packages/anwb-icons/ui.woff2; frame-src 
+https://*.janrain.com https://*.janraincapture.com https://www.google.com https://login-ontw.anwb.nl; frame-ancestors 'self' http://localhost:8079; base-uri 'none'; object-src 'none'" 
     Cache-Control = "s-maxage=0, max-age=150, public"
     Edge-Cache-Tag = "purgeme"
     Access-Control-Allow-Origin = "*"
