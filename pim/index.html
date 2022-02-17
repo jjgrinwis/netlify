@@ -10,10 +10,11 @@
          PIM script statically injected in the HEAD of the page.
       </p>
       <a href="/">leave page</a>. This will trigger browser unload event and /collect script will POST beacon data to PIM backend. 
+
       <script>
-   $("document").ready(function () {
-      $("p").append("<p>used jqeuery to add this</p>");
-   })
-</script>
+         $("document").ready(function () {
+            $("p").append("<p>used jquery version " + jQuery().jquery " to add this text</p>");
+         })
+      </script>
    </body>
 </html>
