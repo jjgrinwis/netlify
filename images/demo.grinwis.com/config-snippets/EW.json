@@ -1,0 +1,35 @@
+{
+    "name": "EW",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "edgeWorker",
+            "options": {
+                "enabled": true,
+                "createEdgeWorker": "",
+                "edgeWorkerId": "4390",
+                "resourceTier": ""
+            }
+        },
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "NO_STORE"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "path",
+            "options": {
+                "matchOperator": "MATCHES_ONE_OF",
+                "values": [
+                    "/ew/*"
+                ],
+                "matchCaseSensitive": false,
+                "normalize": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

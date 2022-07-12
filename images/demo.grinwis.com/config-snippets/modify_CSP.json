@@ -1,0 +1,50 @@
+{
+    "name": "modify CSP",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "setVariable",
+            "options": {
+                "variableName": "PMUSER_TEMP",
+                "valueSource": "EXTRACT",
+                "transform": "NONE",
+                "extractLocation": "RESPONSE_HEADER",
+                "responseHeaderName": "Content-Security-Policy"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "variableName": "PMUSER_CSP",
+                "valueSource": "EXPRESSION",
+                "transform": "SUBSTITUTE",
+                "variableValue": "{{user.PMUSER_TEMP}}",
+                "regex": "(.*?)script-src(.*)",
+                "replacement": "$1script-src https://www.google-analytics.com$2",
+                "caseSensitive": false,
+                "globalSubstitution": true
+            }
+        },
+        {
+            "name": "modifyOutgoingResponseHeader",
+            "options": {
+                "action": "MODIFY",
+                "standardModifyHeaderName": "OTHER",
+                "newHeaderValue": "{{user.PMUSER_CSP}}",
+                "avoidDuplicateHeaders": true,
+                "customHeaderName": "Content-Security-Policy"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "responseHeader",
+            "options": {
+                "headerName": "Content-Security-Policy",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

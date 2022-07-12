@@ -1,0 +1,23 @@
+{
+    "name": "cache-test",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "NO_STORE"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "x-cache-test",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3962873,
+        "cnameFrom": "*dev.grinwis.com",
+        "cnameTo": "demo.grinwis.com.edgesuite.net",
+        "certProvisioningType": "CPS_MANAGED"
+    },
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3962873,
+        "cnameFrom": "demo.grinwis.com",
+        "cnameTo": "demo.grinwis.com.edgesuite.net",
+        "certProvisioningType": "DEFAULT",
+        "certStatus": {
+            "production": [
+                {
+                    "status": "DEPLOYED"
+                }
+            ],
+            "staging": [
+                {
+                    "status": "NEEDS_ACTIVATION"
+                }
+            ],
+            "validationCname": {
+                "hostname": "_acme-challenge.demo.grinwis.com",
+                "target": "ac.acc749ab9c2d096c9fc970c28538247c.demo.grinwis.com.validate-akdv.net"
+            }
+        }
+    }
+]

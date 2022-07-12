@@ -1,0 +1,56 @@
+{
+    "name": "New Rule",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "failAction",
+            "options": {
+                "enabled": true,
+                "actionType": "RECREATED_NS",
+                "netStorageHostname": {
+                    "downloadDomainName": "jgrinwis.download.akamai.com",
+                    "cpCode": 789214,
+                    "g2oToken": null
+                },
+                "netStoragePath": "/failover/index.html",
+                "cpCode": {
+                    "id": 664271,
+                    "description": "default CPCode",
+                    "products": [
+                        "Fresca"
+                    ],
+                    "createdDate": 1516627825000,
+                    "cpCodeLimits": null,
+                    "name": "default CPCode"
+                },
+                "statusCode": 200
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "originTimeout",
+            "options": {
+                "matchOperator": "ORIGIN_TIMED_OUT"
+            }
+        },
+        {
+            "name": "matchResponseCode",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "500"
+                ]
+            }
+        },
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "failover",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "any"
+}

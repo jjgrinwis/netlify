@@ -1,0 +1,36 @@
+{
+    "name": "replace path",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "rewriteUrl",
+            "options": {
+                "behavior": "REWRITE",
+                "targetUrl": "/images/space.jpg"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "advancedImMatch",
+            "options": {
+                "matchOperator": "IS",
+                "matchOn": "ANY_IM"
+            }
+        },
+        {
+            "name": "path",
+            "options": {
+                "matchOperator": "MATCHES_ONE_OF",
+                "values": [
+                    "/images/red.jpg",
+                    "/images/blue.jpg",
+                    "/images/orange.jpg"
+                ],
+                "matchCaseSensitive": false,
+                "normalize": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

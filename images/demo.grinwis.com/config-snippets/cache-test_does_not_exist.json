@@ -1,0 +1,46 @@
+{
+    "name": "cache-test does not exist",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "CACHE_CONTROL_AND_EXPIRES",
+                "mustRevalidate": false,
+                "defaultTtl": "6h",
+                "cacheControlDirectives": "",
+                "enhancedRfcSupport": true,
+                "honorPrivate": true,
+                "honorMustRevalidate": false,
+                "cacheabilitySettings": "",
+                "honorNoStore": true,
+                "honorNoCache": true,
+                "expirationSettings": "",
+                "honorMaxAge": true,
+                "honorSMaxage": true,
+                "revalidationSettings": "",
+                "honorProxyRevalidate": false
+            }
+        },
+        {
+            "name": "downstreamCache",
+            "options": {
+                "behavior": "ALLOW",
+                "allowBehavior": "LESSER",
+                "sendHeaders": "CACHE_CONTROL",
+                "sendPrivate": false
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "x-cache-test",
+                "matchOperator": "DOES_NOT_EXIST",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

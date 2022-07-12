@@ -1,0 +1,40 @@
+{
+    "name": "Redirects",
+    "children": [
+        {
+            "name": "Redirect to HTTPS",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "httpStrictTransportSecurity",
+                    "options": {
+                        "enable": true,
+                        "maxAge": "ONE_DAY",
+                        "includeSubDomains": false,
+                        "preload": false,
+                        "redirect": true,
+                        "redirectStatusCode": 301
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "path",
+                    "options": {
+                        "matchOperator": "DOES_NOT_MATCH_ONE_OF",
+                        "values": [
+                            "/.well-known/acme-challenge/*"
+                        ],
+                        "matchCaseSensitive": false,
+                        "normalize": false
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all",
+    "comments": "some rules to arrange different redirects"
+}

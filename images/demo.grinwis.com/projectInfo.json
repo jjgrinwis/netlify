@@ -1,0 +1,11 @@
+{
+    "productId": "Fresca",
+    "contractId": "3-16TWBVX",
+    "groupId": 48668,
+    "version": "0.7.7-RELEASE",
+    "isSecure": false,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "demo.grinwis.com"
+}

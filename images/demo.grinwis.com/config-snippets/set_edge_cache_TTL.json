@@ -1,0 +1,17 @@
+{
+    "name": "set edge cache TTL",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "advanced",
+            "options": {
+                "description": "add real cache TTL header",
+                "xml": "<edgeservices:modify-outgoing-response>\n<add-header>\n<name>Akamai-X-True-TTL</name>\n<value>%(AK_INTERNAL_TTL)</value>\n</add-header>\n\n</edgeservices:modify-outgoing-response>\n<!-- Logic to be implemented in CLIENT_REQ match -->\n  <match:request.type value=\"CLIENT_REQ\">\n         <match:metadata-stage value=\"client-response\">\n            <!-- Initialize the Current TTL into AKTTL variable -->\n              <assign:variable> \n                  <name>AKTTL</name> \n                  <value>%(AK_CURRENT_AGE)</value> \n              </assign:variable>\n            <!-- if object was not served from local cache, then Age should be 0 -->\n            <match:variable name=\"AK_CONTENT_SOURCE\" value=\"*d* *i* *m* *s*\" value-wildcard=\"on\" result=\"false\">\n              <assign:variable>\n                  <name>AKTTL</name> \n                  <value>0</value> \n              </assign:variable> \n            </match:variable>  \n            <!-- Send the AKTLL values as response header -->\n            <edgeservices:modify-outgoing-response.add-header> \n                <name>Age</name> \n                <value>%(AKTTL)</value> \n                <status>on</status> \n                <edge-only>on</edge-only> \n            </edgeservices:modify-outgoing-response.add-header> \n         </match:metadata-stage>\n  </match:request.type>"
+            },
+            "uuid": "5951520e-886d-4a4c-8227-f52e494512a9"
+        }
+    ],
+    "uuid": "ac30fc81-fbe7-42a2-b5ea-c24e2c2f5f25",
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

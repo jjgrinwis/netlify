@@ -1,0 +1,30 @@
+{
+    "name": "failover header",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "modifyOutgoingResponseHeader",
+            "options": {
+                "action": "ADD",
+                "standardAddHeaderName": "OTHER",
+                "headerValue": "failover",
+                "customHeaderName": "x-extra-header"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "path",
+            "options": {
+                "matchOperator": "MATCHES_ONE_OF",
+                "values": [
+                    "/AK_PM_VPATH0/789214/failover/*",
+                    "/AK_PM_VPATH0/789214/failover/"
+                ],
+                "matchCaseSensitive": false,
+                "normalize": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

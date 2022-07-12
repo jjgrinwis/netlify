@@ -1,0 +1,37 @@
+{
+    "name": "demo.grinwis.com",
+    "propertyId": 497733,
+    "propertyName": "demo.grinwis.com",
+    "groupId": 48668,
+    "isSecure": false,
+    "latestVersionInfo": {
+        "propertyVersion": 340,
+        "updatedByUser": "jgrinwis",
+        "updatedDate": "2022-03-03T15:06:54Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "99e8eb707eaddead7a61f87a9516b33ae3128e08",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_STAGING_Info": {
+        "propertyVersion": 320,
+        "updatedByUser": "jgrinwis",
+        "updatedDate": "2021-07-15T12:38:53Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "0c1b7b2a2a212c97dfae142934f3f94d5fd30767",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_PRODUCTION_Info": {
+        "propertyVersion": 339,
+        "updatedByUser": "jgrinwis",
+        "updatedDate": "2022-03-02T17:42:34Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "9b082d068d96a01d89170aba46cf18973d9082d6",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    }
+}

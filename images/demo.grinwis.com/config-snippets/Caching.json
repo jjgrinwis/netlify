@@ -1,0 +1,59 @@
+{
+    "name": "Caching",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "NO_STORE"
+            }
+        },
+        {
+            "name": "removeVary",
+            "options": {
+                "enabled": true
+            }
+        },
+        {
+            "name": "cacheKeyIgnoreCase",
+            "options": {
+                "enabled": true
+            }
+        },
+        {
+            "name": "cacheError",
+            "options": {
+                "enabled": true,
+                "ttl": "15s",
+                "preserveStale": true
+            }
+        },
+        {
+            "name": "prefreshCache",
+            "options": {
+                "enabled": true,
+                "prefreshval": 80
+            }
+        },
+        {
+            "name": "validateEntityTag",
+            "options": {
+                "enabled": true
+            }
+        },
+        {
+            "name": "downstreamCache",
+            "options": {
+                "behavior": "TUNNEL_ORIGIN"
+            }
+        },
+        {
+            "name": "cacheKeyQueryParams",
+            "options": {
+                "behavior": "INCLUDE_ALL_PRESERVE_ORDER"
+            }
+        }
+    ],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}
