@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cors test</title>
+</head>
+<body>
+<script>
+const fetchPromise = fetch("https://api.grinwis.com/headers");
+
+fetchPromise
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  });
+</script>
+</body>
+</html>
