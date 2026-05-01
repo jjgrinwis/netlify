@@ -1,1 +1,43 @@
-logo-svg.svg
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="mountainBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="mountainFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="400" cy="400" r="380" fill="url(#bg)"/>
+
+  <!-- Sun -->
+  <circle cx="400" cy="340" r="110" fill="url(#sun)"/>
+
+  <!-- Back mountain -->
+  <path d="M 80 620 L 320 280 L 560 620 Z" fill="url(#mountainBack)"/>
+
+  <!-- Front mountain -->
+  <path d="M 240 620 L 480 320 L 720 620 Z" fill="url(#mountainFront)"/>
+
+  <!-- Snow caps -->
+  <path d="M 440 380 L 480 320 L 520 380 L 500 395 L 480 380 L 460 395 Z" fill="#ffffff"/>
+  <path d="M 290 345 L 320 280 L 350 345 L 335 360 L 320 345 L 305 360 Z" fill="#f1f5f9"/>
+
+  <!-- Ground line -->
+  <rect x="40" y="615" width="720" height="10" fill="#0b1220" opacity="0.6"/>
+
+  <!-- Outer ring -->
+  <circle cx="400" cy="400" r="380" fill="none" stroke="#fde68a" stroke-width="6" opacity="0.7"/>
+</svg>
