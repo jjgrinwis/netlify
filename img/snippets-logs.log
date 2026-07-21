@@ -366,3 +366,1848 @@
   input: '/papi/v1/properties/prp_884804/activations/atv_19601904?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
   groups: undefined
 ]
+[2026-05-01T10:28:27.295] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:28:27.295] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:28:27.295] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'gss'
+[2026-05-01T10:28:27.295] [INFO] devops-prov - Settings file:  {
+  devopsHome: '/Users/jgrinwis/Projects/netlify/img',
+  outputFormat: 'table',
+  accountSwitchKey: 'B-M-1YX7F48:1-8BYUX',
+  edgeGridConfig: { path: '/Users/jgrinwis/.edgerc', section: 'gss' }
+}
+[2026-05-01T10:28:27.296] [INFO] devops-prov - emails for activation:  Set(1) { 'noreply@akamai.com' }
+[2026-05-01T10:28:27.296] [INFO] devops-prov.factory - need to create papi
+[2026-05-01T10:28:27.297] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2026-05-01T10:28:27.299] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:27+0000;nonce=bdf4920a-3e25-4ab5-a634-e218fecaab37;
+
+[2026-05-01T10:28:27.299] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:28:27.299] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 33
+[2026-05-01T10:28:27.299] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:28:27.299] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ew.grinwis.com"}
+[2026-05-01T10:28:27.300] [INFO] devops-prov.edgegrid.helpers - Content hash is "g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA="
+[2026-05-01T10:28:27.300] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX		g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:27+0000;nonce=bdf4920a-3e25-4ab5-a634-e218fecaab37;" 
+
+[2026-05-01T10:28:27.300] [INFO] devops-prov.edgegrid.helpers - Signing key: KRRT42lxv46gBkloBhLwYmplksew1xPbSMaseQeRgxc=
+
+[2026-05-01T10:28:27.300] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:27+0000;nonce=bdf4920a-3e25-4ab5-a634-e218fecaab37;signature=xRkyBAaKfRUjuIdybxSX0JONwEMHAAl/XTAPad411AA=
+
+[2026-05-01T10:28:27.320] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:27+0000;nonce=bdf4920a-3e25-4ab5-a634-e218fecaab37;signature=xRkyBAaKfRUjuIdybxSX0JONwEMHAAl/XTAPad411AA=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 33
+  },
+  body: '{"propertyName":"ew.grinwis.com"}'
+}
+[2026-05-01T10:28:28.421] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '19f4bad5bd6a1c16',
+    'x-ids-session-id': 'b6a59749-d779-49e0-bfb4-23b7ad9a4b7e, b6a59749-d779-49e0-bfb4-23b7ad9a4b7e',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2487',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '1282',
+    date: 'Fri, 01 May 2026 08:28:28 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 220,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2025-10-09T13:01:21Z",\n' +
+    '      "productionStatus" : "ACTIVE",\n' +
+    '      "stagingStatus" : "DEACTIVATED"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 250,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:18:41Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 251,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:28:03Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:28:28.422] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:28:28.422] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 220,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2025-10-09T13:01:21Z",
+      "productionStatus" : "ACTIVE",
+      "stagingStatus" : "DEACTIVATED"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 250,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:18:41Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 251,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:28:03Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2026-05-01T10:28:28.423] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884804/versions/latest
+[2026-05-01T10:28:28.424] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=5c42ff0a-75e7-48e7-be92-17d1604b9b31;
+
+[2026-05-01T10:28:28.424] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:28:28.424] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:28:28.424] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=5c42ff0a-75e7-48e7-be92-17d1604b9b31;" 
+
+[2026-05-01T10:28:28.424] [INFO] devops-prov.edgegrid.helpers - Signing key: D2bwu8aUA8zINR0yZXgHiZ1Lcf6meIH/Sx6W1ggSHI0=
+
+[2026-05-01T10:28:28.424] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=5c42ff0a-75e7-48e7-be92-17d1604b9b31;signature=5/w5uGeJTTFjdzSSMqtJx2W+3iBpr4h/e8e7ov2iF0U=
+
+[2026-05-01T10:28:28.428] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=5c42ff0a-75e7-48e7-be92-17d1604b9b31;signature=5/w5uGeJTTFjdzSSMqtJx2W+3iBpr4h/e8e7ov2iF0U=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:28:28.995] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '239a019d3ed305d4',
+    'x-ids-session-id': '2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc, 2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2486',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/251?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '106',
+    date: 'Fri, 01 May 2026 08:28:28 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884804/versions/251?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:28:28.997] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=90a09005-8dd7-4d50-aca2-e281758a4e12;
+
+[2026-05-01T10:28:28.997] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:28:28.997] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:28:28.997] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/versions/251?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=90a09005-8dd7-4d50-aca2-e281758a4e12;" 
+
+[2026-05-01T10:28:28.997] [INFO] devops-prov.edgegrid.helpers - Signing key: D2bwu8aUA8zINR0yZXgHiZ1Lcf6meIH/Sx6W1ggSHI0=
+
+[2026-05-01T10:28:28.997] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=90a09005-8dd7-4d50-aca2-e281758a4e12;signature=DpUu/lheK3unmMxKLK9uvzYG1pdOoZotbfOBFLl5bmg=
+
+[2026-05-01T10:28:28.999] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/251?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:28+0000;nonce=90a09005-8dd7-4d50-aca2-e281758a4e12;signature=DpUu/lheK3unmMxKLK9uvzYG1pdOoZotbfOBFLl5bmg=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:28:29.260] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'a63959b7ad046a24',
+    'x-ids-session-id': '1d186137-bae8-41e6-ae0b-3d5392c96b90, 1d186137-bae8-41e6-ae0b-3d5392c96b90',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2483',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/251?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '138',
+    date: 'Fri, 01 May 2026 08:28:29 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884804/versions/251?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:28:29.261] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=378fea95-fff4-4d60-9085-dcf60d499fe7;
+
+[2026-05-01T10:28:29.262] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:28:29.262] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:28:29.262] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/251?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=378fea95-fff4-4d60-9085-dcf60d499fe7;" 
+
+[2026-05-01T10:28:29.262] [INFO] devops-prov.edgegrid.helpers - Signing key: W2rNR6mZVJOIVhstBaog1kW1iB6n6ORvIjjejt6xdWk=
+
+[2026-05-01T10:28:29.262] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=378fea95-fff4-4d60-9085-dcf60d499fe7;signature=o7ypLNzq9rMH/BwKK4QcONP9gx9LxOLD3IBFtAPu604=
+
+[2026-05-01T10:28:29.263] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/251?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=378fea95-fff4-4d60-9085-dcf60d499fe7;signature=o7ypLNzq9rMH/BwKK4QcONP9gx9LxOLD3IBFtAPu604=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:28:29.852] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '8d2618de1ae04856',
+    'x-ids-session-id': '2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc, 2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2482',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '559',
+    date: 'Fri, 01 May 2026 08:28:29 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884804",\n' +
+    '  "propertyName" : "ew.grinwis.com",\n' +
+    '  "accountId" : "act_B-M-1YX7F48",\n' +
+    '  "contractId" : "ctr_M-1YX7F61",\n' +
+    '  "groupId" : "grp_93068",\n' +
+    '  "assetId" : "aid_11120979",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 251,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:28:03Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "7f9649991812fbb08163327d22d73f0ccf646a10",\n' +
+    '      "productId" : "prd_Site_Accel",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:28:29.853] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:28:29.853] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884804",
+  "propertyName" : "ew.grinwis.com",
+  "accountId" : "act_B-M-1YX7F48",
+  "contractId" : "ctr_M-1YX7F61",
+  "groupId" : "grp_93068",
+  "assetId" : "aid_11120979",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 251,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:28:03Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "7f9649991812fbb08163327d22d73f0ccf646a10",
+      "productId" : "prd_Site_Accel",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2026-05-01T10:28:29.854] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties/prp_884804/activations
+[2026-05-01T10:28:29.854] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=b1c6fca6-ea85-4088-a141-dde8b8d93c3e;
+
+[2026-05-01T10:28:29.854] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyVersion":251,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:28:29.854] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 247
+[2026-05-01T10:28:29.854] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyVersion":251,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:28:29.854] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyVersion":251,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}
+[2026-05-01T10:28:29.855] [INFO] devops-prov.edgegrid.helpers - Content hash is "vs+9d7KUh/oZ2uBuufGW7ibigIotovKwr9QbdDHauqM="
+[2026-05-01T10:28:29.855] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX		vs+9d7KUh/oZ2uBuufGW7ibigIotovKwr9QbdDHauqM=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=b1c6fca6-ea85-4088-a141-dde8b8d93c3e;" 
+
+[2026-05-01T10:28:29.855] [INFO] devops-prov.edgegrid.helpers - Signing key: W2rNR6mZVJOIVhstBaog1kW1iB6n6ORvIjjejt6xdWk=
+
+[2026-05-01T10:28:29.855] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=b1c6fca6-ea85-4088-a141-dde8b8d93c3e;signature=g187D/Djc81bZ2JyZxdJQ20A5DGDpIkBESrrbn/CUhQ=
+
+[2026-05-01T10:28:29.855] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:28:29+0000;nonce=b1c6fca6-ea85-4088-a141-dde8b8d93c3e;signature=g187D/Djc81bZ2JyZxdJQ20A5DGDpIkBESrrbn/CUhQ=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 247
+  },
+  body: '{"propertyVersion":251,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}'
+}
+[2026-05-01T10:28:42.594] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '0b5efe18017360db',
+    'x-ids-session-id': '2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc, 2de3f4b3-2b47-4ae1-beb1-0ed6e9a9d5dc',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2481',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations/atv_19601925?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '496',
+    'x-ratelimit-activations-reset': '2026-05-02T01:44:35Z',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '121',
+    date: 'Fri, 01 May 2026 08:28:42 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19601925?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:28:42.595] [INFO] devops-prov.openclient - Status code:  201
+[2026-05-01T10:28:42.595] [INFO] devops-prov.openclient - Body:  {
+  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19601925?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"
+}
+[2026-05-01T10:28:42.595] [INFO] devops-prov.envionment - activation regex results:  [
+  '/papi/v1/properties/prp_884804/activations/atv_19601925',
+  'prp_',
+  'atv_',
+  '19601925',
+  index: 0,
+  input: '/papi/v1/properties/prp_884804/activations/atv_19601925?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  groups: undefined
+]
+[2026-05-01T10:42:42.386] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:42:42.386] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:42:42.386] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'gss'
+[2026-05-01T10:42:42.386] [INFO] devops-prov - Settings file:  {
+  devopsHome: '/Users/jgrinwis/Projects/netlify/img',
+  outputFormat: 'table',
+  accountSwitchKey: 'B-M-1YX7F48:1-8BYUX',
+  edgeGridConfig: { path: '/Users/jgrinwis/.edgerc', section: 'gss' }
+}
+[2026-05-01T10:42:42.387] [INFO] devops-prov - emails for activation:  Set(1) { 'noreply@akamai.com' }
+[2026-05-01T10:42:42.387] [INFO] devops-prov.factory - need to create papi
+[2026-05-01T10:42:42.388] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2026-05-01T10:42:42.390] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:42+0000;nonce=6bd69394-4db0-4a6a-b306-1f80cf45155b;
+
+[2026-05-01T10:42:42.390] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:42:42.390] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 33
+[2026-05-01T10:42:42.390] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:42:42.390] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ew.grinwis.com"}
+[2026-05-01T10:42:42.391] [INFO] devops-prov.edgegrid.helpers - Content hash is "g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA="
+[2026-05-01T10:42:42.391] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX		g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:42+0000;nonce=6bd69394-4db0-4a6a-b306-1f80cf45155b;" 
+
+[2026-05-01T10:42:42.391] [INFO] devops-prov.edgegrid.helpers - Signing key: Nwy56gvFzFuUdErD41RDP5Ix8HPP04YGkNaAggmUtjo=
+
+[2026-05-01T10:42:42.391] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:42+0000;nonce=6bd69394-4db0-4a6a-b306-1f80cf45155b;signature=hUo9mkQNr6j4gtoQO1IrY4VGZrNB2oESvcXuzb98fNA=
+
+[2026-05-01T10:42:42.415] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:42+0000;nonce=6bd69394-4db0-4a6a-b306-1f80cf45155b;signature=hUo9mkQNr6j4gtoQO1IrY4VGZrNB2oESvcXuzb98fNA=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 33
+  },
+  body: '{"propertyName":"ew.grinwis.com"}'
+}
+[2026-05-01T10:42:43.292] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'a34523108033a592',
+    'x-ids-session-id': '4f1a5882-906f-4fa5-8071-7954638de3f5, 4f1a5882-906f-4fa5-8071-7954638de3f5',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2477',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '1282',
+    date: 'Fri, 01 May 2026 08:42:43 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 251,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:28:03Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 220,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2025-10-09T13:01:21Z",\n' +
+    '      "productionStatus" : "ACTIVE",\n' +
+    '      "stagingStatus" : "DEACTIVATED"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 252,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:42:19Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:42:43.292] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:42:43.292] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 251,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:28:03Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 220,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2025-10-09T13:01:21Z",
+      "productionStatus" : "ACTIVE",
+      "stagingStatus" : "DEACTIVATED"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 252,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:42:19Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2026-05-01T10:42:43.293] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884804/versions/latest
+[2026-05-01T10:42:43.294] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=e17dd690-877a-40f3-b2ac-ba4ed493835c;
+
+[2026-05-01T10:42:43.294] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:42:43.294] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:42:43.294] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=e17dd690-877a-40f3-b2ac-ba4ed493835c;" 
+
+[2026-05-01T10:42:43.294] [INFO] devops-prov.edgegrid.helpers - Signing key: YRzkIckrLw9NhhaCb8n/ZxPWIi8LAte4QVw1zdiQIvo=
+
+[2026-05-01T10:42:43.294] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=e17dd690-877a-40f3-b2ac-ba4ed493835c;signature=vjity6rmL/3ribCDtdCmLRyDcOWjgCYtod42PxtBIgg=
+
+[2026-05-01T10:42:43.296] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=e17dd690-877a-40f3-b2ac-ba4ed493835c;signature=vjity6rmL/3ribCDtdCmLRyDcOWjgCYtod42PxtBIgg=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:42:43.891] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '3f6d2ca16156634b',
+    'x-ids-session-id': '4f1a5882-906f-4fa5-8071-7954638de3f5, 4f1a5882-906f-4fa5-8071-7954638de3f5',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2476',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/252?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '106',
+    date: 'Fri, 01 May 2026 08:42:43 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884804/versions/252?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:42:43.892] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=8ee68d81-4c12-41ce-a4db-72bd17e1feb7;
+
+[2026-05-01T10:42:43.892] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:42:43.892] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:42:43.892] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/versions/252?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=8ee68d81-4c12-41ce-a4db-72bd17e1feb7;" 
+
+[2026-05-01T10:42:43.892] [INFO] devops-prov.edgegrid.helpers - Signing key: YRzkIckrLw9NhhaCb8n/ZxPWIi8LAte4QVw1zdiQIvo=
+
+[2026-05-01T10:42:43.892] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=8ee68d81-4c12-41ce-a4db-72bd17e1feb7;signature=TEjElZ6Aw3T8jgQ7uuDPkbCvVX/v8CWmKUPg31Te7/g=
+
+[2026-05-01T10:42:43.894] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/252?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:43+0000;nonce=8ee68d81-4c12-41ce-a4db-72bd17e1feb7;signature=TEjElZ6Aw3T8jgQ7uuDPkbCvVX/v8CWmKUPg31Te7/g=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:42:44.194] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '9f6c9bd627fe5641',
+    'x-ids-session-id': '97101eb6-61e7-467d-b990-76ac2ad59ba7, 97101eb6-61e7-467d-b990-76ac2ad59ba7',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2475',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/252?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '138',
+    date: 'Fri, 01 May 2026 08:42:44 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884804/versions/252?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:42:44.195] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=3eeb7d18-a78a-4895-8137-e52b9dd794dc;
+
+[2026-05-01T10:42:44.195] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:42:44.195] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:42:44.195] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/252?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=3eeb7d18-a78a-4895-8137-e52b9dd794dc;" 
+
+[2026-05-01T10:42:44.196] [INFO] devops-prov.edgegrid.helpers - Signing key: 8XLxtE5q7+nS+0ohoqg++XeYbMRyilgZfwhrqdIPpLs=
+
+[2026-05-01T10:42:44.196] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=3eeb7d18-a78a-4895-8137-e52b9dd794dc;signature=JVvCznMBZ+npZt0ajgyxki9fdSgFRveaUSlTbbLHjW4=
+
+[2026-05-01T10:42:44.197] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/252?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=3eeb7d18-a78a-4895-8137-e52b9dd794dc;signature=JVvCznMBZ+npZt0ajgyxki9fdSgFRveaUSlTbbLHjW4=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:42:44.911] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '7ddf492a0145d94c',
+    'x-ids-session-id': 'cfd82a42-1393-4f46-bd3e-072028861941, cfd82a42-1393-4f46-bd3e-072028861941',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2474',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '559',
+    date: 'Fri, 01 May 2026 08:42:44 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884804",\n' +
+    '  "propertyName" : "ew.grinwis.com",\n' +
+    '  "accountId" : "act_B-M-1YX7F48",\n' +
+    '  "contractId" : "ctr_M-1YX7F61",\n' +
+    '  "groupId" : "grp_93068",\n' +
+    '  "assetId" : "aid_11120979",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 252,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:42:19Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "606c804508b1e5f3c63b374aaa3d1a7973a1c362",\n' +
+    '      "productId" : "prd_Site_Accel",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:42:44.912] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:42:44.912] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884804",
+  "propertyName" : "ew.grinwis.com",
+  "accountId" : "act_B-M-1YX7F48",
+  "contractId" : "ctr_M-1YX7F61",
+  "groupId" : "grp_93068",
+  "assetId" : "aid_11120979",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 252,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:42:19Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "606c804508b1e5f3c63b374aaa3d1a7973a1c362",
+      "productId" : "prd_Site_Accel",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2026-05-01T10:42:44.913] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties/prp_884804/activations
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=12fa17e9-c445-409f-958e-d9db82683735;
+
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyVersion":252,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:42:44.914] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 247
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyVersion":252,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:42:44.914] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyVersion":252,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.helpers - Content hash is "M+CD/IAnf9wxABP/jPIMnGtT3LMBXc3TIMf6U8PrSCE="
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX		M+CD/IAnf9wxABP/jPIMnGtT3LMBXc3TIMf6U8PrSCE=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=12fa17e9-c445-409f-958e-d9db82683735;" 
+
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.helpers - Signing key: 8XLxtE5q7+nS+0ohoqg++XeYbMRyilgZfwhrqdIPpLs=
+
+[2026-05-01T10:42:44.914] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=12fa17e9-c445-409f-958e-d9db82683735;signature=qRMhlh5RvSb11/ZCd+PHeeY8+ye1pxLUyX6fnMpAA00=
+
+[2026-05-01T10:42:44.916] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:42:44+0000;nonce=12fa17e9-c445-409f-958e-d9db82683735;signature=qRMhlh5RvSb11/ZCd+PHeeY8+ye1pxLUyX6fnMpAA00=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 247
+  },
+  body: '{"propertyVersion":252,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}'
+}
+[2026-05-01T10:42:59.509] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '87cdca81983c487f',
+    'x-ids-session-id': '97101eb6-61e7-467d-b990-76ac2ad59ba7, 97101eb6-61e7-467d-b990-76ac2ad59ba7',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2472',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations/atv_19601970?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '495',
+    'x-ratelimit-activations-reset': '2026-05-02T01:44:35Z',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '121',
+    date: 'Fri, 01 May 2026 08:42:59 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19601970?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:42:59.510] [INFO] devops-prov.openclient - Status code:  201
+[2026-05-01T10:42:59.510] [INFO] devops-prov.openclient - Body:  {
+  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19601970?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"
+}
+[2026-05-01T10:42:59.511] [INFO] devops-prov.envionment - activation regex results:  [
+  '/papi/v1/properties/prp_884804/activations/atv_19601970',
+  'prp_',
+  'atv_',
+  '19601970',
+  index: 0,
+  input: '/papi/v1/properties/prp_884804/activations/atv_19601970?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  groups: undefined
+]
+[2026-05-01T10:53:36.551] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:53:36.551] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T10:53:36.551] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'gss'
+[2026-05-01T10:53:36.552] [INFO] devops-prov - Settings file:  {
+  devopsHome: '/Users/jgrinwis/Projects/netlify/img',
+  outputFormat: 'table',
+  accountSwitchKey: 'B-M-1YX7F48:1-8BYUX',
+  edgeGridConfig: { path: '/Users/jgrinwis/.edgerc', section: 'gss' }
+}
+[2026-05-01T10:53:36.552] [INFO] devops-prov - emails for activation:  Set(1) { 'noreply@akamai.com' }
+[2026-05-01T10:53:36.552] [INFO] devops-prov.factory - need to create papi
+[2026-05-01T10:53:36.553] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2026-05-01T10:53:36.556] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:36+0000;nonce=d022789f-a0a6-4f88-9f3d-ca9174f422a3;
+
+[2026-05-01T10:53:36.556] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:53:36.556] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 33
+[2026-05-01T10:53:36.556] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T10:53:36.556] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ew.grinwis.com"}
+[2026-05-01T10:53:36.557] [INFO] devops-prov.edgegrid.helpers - Content hash is "g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA="
+[2026-05-01T10:53:36.557] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX		g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:36+0000;nonce=d022789f-a0a6-4f88-9f3d-ca9174f422a3;" 
+
+[2026-05-01T10:53:36.558] [INFO] devops-prov.edgegrid.helpers - Signing key: ISPnovhb6yKyo5UhxKZOtYU2zESb6LI29fLKuCI9n50=
+
+[2026-05-01T10:53:36.558] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:36+0000;nonce=d022789f-a0a6-4f88-9f3d-ca9174f422a3;signature=O9FJcurVOtNrYro+nzA6WZcZ88/LzW2TSWP7rnvji28=
+
+[2026-05-01T10:53:36.581] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:36+0000;nonce=d022789f-a0a6-4f88-9f3d-ca9174f422a3;signature=O9FJcurVOtNrYro+nzA6WZcZ88/LzW2TSWP7rnvji28=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 33
+  },
+  body: '{"propertyName":"ew.grinwis.com"}'
+}
+[2026-05-01T10:53:37.742] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '6de6ab9fe6536bd6',
+    'x-ids-session-id': '36f10f95-e356-4808-bebc-c793a782e87e, 36f10f95-e356-4808-bebc-c793a782e87e',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2488',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '1282',
+    date: 'Fri, 01 May 2026 08:53:37 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 253,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:53:16Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 220,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2025-10-09T13:01:21Z",\n' +
+    '      "productionStatus" : "ACTIVE",\n' +
+    '      "stagingStatus" : "DEACTIVATED"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 252,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:42:19Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:53:37.743] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:53:37.743] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 253,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:53:16Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 220,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2025-10-09T13:01:21Z",
+      "productionStatus" : "ACTIVE",
+      "stagingStatus" : "DEACTIVATED"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 252,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:42:19Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    } ]
+  }
+}
+[2026-05-01T10:53:37.744] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884804/versions/latest
+[2026-05-01T10:53:37.745] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:37+0000;nonce=a16cbd93-3835-4f68-be6a-3b8ed80fa264;
+
+[2026-05-01T10:53:37.745] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:53:37.745] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:53:37.745] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:37+0000;nonce=a16cbd93-3835-4f68-be6a-3b8ed80fa264;" 
+
+[2026-05-01T10:53:37.745] [INFO] devops-prov.edgegrid.helpers - Signing key: jm3eJV+I5R3nvMASQM8+SG6IYvri3OcNThtjMYGo7MQ=
+
+[2026-05-01T10:53:37.745] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:37+0000;nonce=a16cbd93-3835-4f68-be6a-3b8ed80fa264;signature=fbHxiOXDGlas7eB79eGY2uvpTpwQJZsWutYzc6MNIRA=
+
+[2026-05-01T10:53:37.748] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:37+0000;nonce=a16cbd93-3835-4f68-be6a-3b8ed80fa264;signature=fbHxiOXDGlas7eB79eGY2uvpTpwQJZsWutYzc6MNIRA=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:53:38.346] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '4075a2fb9cf0478d',
+    'x-ids-session-id': 'efad4569-7f29-4db7-a52e-02d31e15e424, efad4569-7f29-4db7-a52e-02d31e15e424',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2487',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/253?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '106',
+    date: 'Fri, 01 May 2026 08:53:38 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884804/versions/253?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:53:38.349] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=e53130a4-baf4-4986-bd02-95e14e8cc081;
+
+[2026-05-01T10:53:38.349] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:53:38.350] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:53:38.350] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/versions/253?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=e53130a4-baf4-4986-bd02-95e14e8cc081;" 
+
+[2026-05-01T10:53:38.350] [INFO] devops-prov.edgegrid.helpers - Signing key: +9KSYTEXF7xa7paYG6IpWQYuCFUPZ+ph1IbrC+NkgQE=
+
+[2026-05-01T10:53:38.350] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=e53130a4-baf4-4986-bd02-95e14e8cc081;signature=UatTciihB2pQjCnZYJG5mgA6tStJ7KPClhgcQpb/z6w=
+
+[2026-05-01T10:53:38.352] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/253?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=e53130a4-baf4-4986-bd02-95e14e8cc081;signature=UatTciihB2pQjCnZYJG5mgA6tStJ7KPClhgcQpb/z6w=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:53:38.577] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '6eec589f7da0e071',
+    'x-ids-session-id': 'efad4569-7f29-4db7-a52e-02d31e15e424, efad4569-7f29-4db7-a52e-02d31e15e424',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2486',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/253?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '138',
+    date: 'Fri, 01 May 2026 08:53:38 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884804/versions/253?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:53:38.579] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=45e6f469-f2fe-44d2-a94d-e3dce8c2df62;
+
+[2026-05-01T10:53:38.579] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T10:53:38.579] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T10:53:38.579] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/253?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=45e6f469-f2fe-44d2-a94d-e3dce8c2df62;" 
+
+[2026-05-01T10:53:38.579] [INFO] devops-prov.edgegrid.helpers - Signing key: +9KSYTEXF7xa7paYG6IpWQYuCFUPZ+ph1IbrC+NkgQE=
+
+[2026-05-01T10:53:38.579] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=45e6f469-f2fe-44d2-a94d-e3dce8c2df62;signature=HeggnLRjzN/exKHk/m1yHQStMtk0LPrUnSBaGtzx/Lc=
+
+[2026-05-01T10:53:38.580] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/253?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:38+0000;nonce=45e6f469-f2fe-44d2-a94d-e3dce8c2df62;signature=HeggnLRjzN/exKHk/m1yHQStMtk0LPrUnSBaGtzx/Lc=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T10:53:39.083] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'e32e0a8da7ed7ef1',
+    'x-ids-session-id': '36f10f95-e356-4808-bebc-c793a782e87e, 36f10f95-e356-4808-bebc-c793a782e87e',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2484',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '559',
+    date: 'Fri, 01 May 2026 08:53:39 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884804",\n' +
+    '  "propertyName" : "ew.grinwis.com",\n' +
+    '  "accountId" : "act_B-M-1YX7F48",\n' +
+    '  "contractId" : "ctr_M-1YX7F61",\n' +
+    '  "groupId" : "grp_93068",\n' +
+    '  "assetId" : "aid_11120979",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 253,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:53:16Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "f0ce6cf43182740c9c0371fa7c3051e75530a1c9",\n' +
+    '      "productId" : "prd_Site_Accel",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T10:53:39.084] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T10:53:39.084] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884804",
+  "propertyName" : "ew.grinwis.com",
+  "accountId" : "act_B-M-1YX7F48",
+  "contractId" : "ctr_M-1YX7F61",
+  "groupId" : "grp_93068",
+  "assetId" : "aid_11120979",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 253,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:53:16Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "f0ce6cf43182740c9c0371fa7c3051e75530a1c9",
+      "productId" : "prd_Site_Accel",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2026-05-01T10:53:39.084] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties/prp_884804/activations
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:39+0000;nonce=1725581b-81d8-4598-ab6d-2df6212aa261;
+
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyVersion":253,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:53:39.085] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 247
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyVersion":253,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T10:53:39.085] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyVersion":253,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.helpers - Content hash is "/RpyrLz+NE4MflEJE97wxCT2lh8uXrDdJWyvE7D82e4="
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX		/RpyrLz+NE4MflEJE97wxCT2lh8uXrDdJWyvE7D82e4=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:39+0000;nonce=1725581b-81d8-4598-ab6d-2df6212aa261;" 
+
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.helpers - Signing key: W6dSOTj1RpFSrurGBIYIRgjPABhAcaWO05jPzqCYZ3M=
+
+[2026-05-01T10:53:39.085] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:39+0000;nonce=1725581b-81d8-4598-ab6d-2df6212aa261;signature=CAPIhvONIFJH4oer5aMgzuUoXb8g226J81mbxA7tOg0=
+
+[2026-05-01T10:53:39.086] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T08:53:39+0000;nonce=1725581b-81d8-4598-ab6d-2df6212aa261;signature=CAPIhvONIFJH4oer5aMgzuUoXb8g226J81mbxA7tOg0=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 247
+  },
+  body: '{"propertyVersion":253,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}'
+}
+[2026-05-01T10:53:54.590] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'c136818f9a5049f8',
+    'x-ids-session-id': 'efad4569-7f29-4db7-a52e-02d31e15e424, efad4569-7f29-4db7-a52e-02d31e15e424',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2483',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations/atv_19602023?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '494',
+    'x-ratelimit-activations-reset': '2026-05-02T01:44:35Z',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '121',
+    date: 'Fri, 01 May 2026 08:53:54 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602023?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T10:53:54.591] [INFO] devops-prov.openclient - Status code:  201
+[2026-05-01T10:53:54.591] [INFO] devops-prov.openclient - Body:  {
+  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602023?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"
+}
+[2026-05-01T10:53:54.592] [INFO] devops-prov.envionment - activation regex results:  [
+  '/papi/v1/properties/prp_884804/activations/atv_19602023',
+  'prp_',
+  'atv_',
+  '19602023',
+  index: 0,
+  input: '/papi/v1/properties/prp_884804/activations/atv_19602023?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  groups: undefined
+]
+[2026-05-01T11:00:03.763] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T11:00:03.763] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T11:00:03.763] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'gss'
+[2026-05-01T11:00:03.764] [INFO] devops-prov - Settings file:  {
+  devopsHome: '/Users/jgrinwis/Projects/netlify/img',
+  outputFormat: 'table',
+  accountSwitchKey: 'B-M-1YX7F48:1-8BYUX',
+  edgeGridConfig: { path: '/Users/jgrinwis/.edgerc', section: 'gss' }
+}
+[2026-05-01T11:00:03.764] [INFO] devops-prov - emails for activation:  Set(1) { 'noreply@akamai.com' }
+[2026-05-01T11:00:03.764] [INFO] devops-prov.factory - need to create papi
+[2026-05-01T11:00:03.766] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2026-05-01T11:00:03.768] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:03+0000;nonce=471ee5c0-7799-4c02-a48d-2bd4c99dd263;
+
+[2026-05-01T11:00:03.768] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T11:00:03.768] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 33
+[2026-05-01T11:00:03.768] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T11:00:03.768] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ew.grinwis.com"}
+[2026-05-01T11:00:03.769] [INFO] devops-prov.edgegrid.helpers - Content hash is "g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA="
+[2026-05-01T11:00:03.769] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX		g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:03+0000;nonce=471ee5c0-7799-4c02-a48d-2bd4c99dd263;" 
+
+[2026-05-01T11:00:03.770] [INFO] devops-prov.edgegrid.helpers - Signing key: RXLU0kdnA8zqS0a1JoZXqQzZjxA164gZyjzJHubQ1b4=
+
+[2026-05-01T11:00:03.770] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:03+0000;nonce=471ee5c0-7799-4c02-a48d-2bd4c99dd263;signature=55IT9zpGQwxGCDEVEg/FpKJOGOBNIswff3/vNQ6dg7A=
+
+[2026-05-01T11:00:03.797] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:03+0000;nonce=471ee5c0-7799-4c02-a48d-2bd4c99dd263;signature=55IT9zpGQwxGCDEVEg/FpKJOGOBNIswff3/vNQ6dg7A=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 33
+  },
+  body: '{"propertyName":"ew.grinwis.com"}'
+}
+[2026-05-01T11:00:05.340] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '92dbc1365ebd7b1a',
+    'x-ids-session-id': '1736674b-a25c-4673-a21d-69623b3977d1, 1736674b-a25c-4673-a21d-69623b3977d1',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2274',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '1282',
+    date: 'Fri, 01 May 2026 09:00:05 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 254,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:59:51Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 253,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:53:16Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 220,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2025-10-09T13:01:21Z",\n' +
+    '      "productionStatus" : "ACTIVE",\n' +
+    '      "stagingStatus" : "DEACTIVATED"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T11:00:05.344] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T11:00:05.344] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 254,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:59:51Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 253,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:53:16Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 220,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2025-10-09T13:01:21Z",
+      "productionStatus" : "ACTIVE",
+      "stagingStatus" : "DEACTIVATED"
+    } ]
+  }
+}
+[2026-05-01T11:00:05.345] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884804/versions/latest
+[2026-05-01T11:00:05.346] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:05+0000;nonce=8c2914fc-7acd-4f54-8a0e-1ced995dd74e;
+
+[2026-05-01T11:00:05.346] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:00:05.346] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:00:05.346] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:05+0000;nonce=8c2914fc-7acd-4f54-8a0e-1ced995dd74e;" 
+
+[2026-05-01T11:00:05.346] [INFO] devops-prov.edgegrid.helpers - Signing key: FQd/FZbbMVfJBKYme1VzVfxGvbfS+7mE1AlIcw+TQSI=
+
+[2026-05-01T11:00:05.346] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:05+0000;nonce=8c2914fc-7acd-4f54-8a0e-1ced995dd74e;signature=ONbMt/Ky0iVCH1fX40y33PRHmtk6XWiqHEiAwiVWx0U=
+
+[2026-05-01T11:00:05.353] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:05+0000;nonce=8c2914fc-7acd-4f54-8a0e-1ced995dd74e;signature=ONbMt/Ky0iVCH1fX40y33PRHmtk6XWiqHEiAwiVWx0U=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:00:06.085] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'efdd079e228f583a',
+    'x-ids-session-id': '1736674b-a25c-4673-a21d-69623b3977d1, 1736674b-a25c-4673-a21d-69623b3977d1',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2273',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/254?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '106',
+    date: 'Fri, 01 May 2026 09:00:06 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884804/versions/254?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:00:06.087] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=f58bceb1-c4d4-4bce-8e5d-8ce8d3e809bb;
+
+[2026-05-01T11:00:06.087] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:00:06.087] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:00:06.087] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/versions/254?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=f58bceb1-c4d4-4bce-8e5d-8ce8d3e809bb;" 
+
+[2026-05-01T11:00:06.087] [INFO] devops-prov.edgegrid.helpers - Signing key: WOCC/lN2l6iBpYIKKlZ/dHtculobXYD5eIOzMC8OUYQ=
+
+[2026-05-01T11:00:06.087] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=f58bceb1-c4d4-4bce-8e5d-8ce8d3e809bb;signature=gkDc6RToVGzHzSt5bJrfwKybFqDD4U+17liW0ty8v9M=
+
+[2026-05-01T11:00:06.090] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/254?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=f58bceb1-c4d4-4bce-8e5d-8ce8d3e809bb;signature=gkDc6RToVGzHzSt5bJrfwKybFqDD4U+17liW0ty8v9M=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:00:06.455] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'ba836d2261c8d393',
+    'x-ids-session-id': '1736674b-a25c-4673-a21d-69623b3977d1, 1736674b-a25c-4673-a21d-69623b3977d1',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2272',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/254?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '138',
+    date: 'Fri, 01 May 2026 09:00:06 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884804/versions/254?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:00:06.457] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=a4f2d58f-5fbf-43ec-a61e-77664d84b2fe;
+
+[2026-05-01T11:00:06.457] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:00:06.457] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:00:06.457] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/254?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=a4f2d58f-5fbf-43ec-a61e-77664d84b2fe;" 
+
+[2026-05-01T11:00:06.457] [INFO] devops-prov.edgegrid.helpers - Signing key: WOCC/lN2l6iBpYIKKlZ/dHtculobXYD5eIOzMC8OUYQ=
+
+[2026-05-01T11:00:06.457] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=a4f2d58f-5fbf-43ec-a61e-77664d84b2fe;signature=KP5HI94n4eeePVhX/cBVvndXDhqfeXDfYduLwyMOhds=
+
+[2026-05-01T11:00:06.462] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/254?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:06+0000;nonce=a4f2d58f-5fbf-43ec-a61e-77664d84b2fe;signature=KP5HI94n4eeePVhX/cBVvndXDhqfeXDfYduLwyMOhds=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:00:07.314] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'ce2cddaa69082a8c',
+    'x-ids-session-id': 'c9619d10-b1d8-40f1-8c09-79a2321005ed, c9619d10-b1d8-40f1-8c09-79a2321005ed',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2271',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '559',
+    date: 'Fri, 01 May 2026 09:00:07 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884804",\n' +
+    '  "propertyName" : "ew.grinwis.com",\n' +
+    '  "accountId" : "act_B-M-1YX7F48",\n' +
+    '  "contractId" : "ctr_M-1YX7F61",\n' +
+    '  "groupId" : "grp_93068",\n' +
+    '  "assetId" : "aid_11120979",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 254,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:59:51Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "a6eb6e02c3749689217959dda85629a639eaa2d0",\n' +
+    '      "productId" : "prd_Site_Accel",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T11:00:07.315] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T11:00:07.315] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884804",
+  "propertyName" : "ew.grinwis.com",
+  "accountId" : "act_B-M-1YX7F48",
+  "contractId" : "ctr_M-1YX7F61",
+  "groupId" : "grp_93068",
+  "assetId" : "aid_11120979",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 254,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:59:51Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "a6eb6e02c3749689217959dda85629a639eaa2d0",
+      "productId" : "prd_Site_Accel",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2026-05-01T11:00:07.316] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties/prp_884804/activations
+[2026-05-01T11:00:07.317] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:07+0000;nonce=f5c4bd2d-c453-4e64-8bcc-cad5c6f6e056;
+
+[2026-05-01T11:00:07.318] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyVersion":254,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T11:00:07.318] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 247
+[2026-05-01T11:00:07.318] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyVersion":254,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T11:00:07.318] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyVersion":254,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}
+[2026-05-01T11:00:07.318] [INFO] devops-prov.edgegrid.helpers - Content hash is "HPaDi3XZoU7OXx/xU1DCtmKSkrEqjB1dcLTzGxQzfYI="
+[2026-05-01T11:00:07.318] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX		HPaDi3XZoU7OXx/xU1DCtmKSkrEqjB1dcLTzGxQzfYI=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:07+0000;nonce=f5c4bd2d-c453-4e64-8bcc-cad5c6f6e056;" 
+
+[2026-05-01T11:00:07.318] [INFO] devops-prov.edgegrid.helpers - Signing key: DwThboYoKTGBLMqZKGv52P6V/O1Gw/I0nMy13ssa+uo=
+
+[2026-05-01T11:00:07.319] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:07+0000;nonce=f5c4bd2d-c453-4e64-8bcc-cad5c6f6e056;signature=+a2VWT7f8q5khe8zExpR+eVJdVQA9i0xm/AtVHAXfkI=
+
+[2026-05-01T11:00:07.320] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:00:07+0000;nonce=f5c4bd2d-c453-4e64-8bcc-cad5c6f6e056;signature=+a2VWT7f8q5khe8zExpR+eVJdVQA9i0xm/AtVHAXfkI=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 247
+  },
+  body: '{"propertyVersion":254,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}'
+}
+[2026-05-01T11:00:22.127] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '06eedfcffa543c26',
+    'x-ids-session-id': '1736674b-a25c-4673-a21d-69623b3977d1, 1736674b-a25c-4673-a21d-69623b3977d1',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2270',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations/atv_19602054?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '493',
+    'x-ratelimit-activations-reset': '2026-05-02T01:44:35Z',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    date: 'Fri, 01 May 2026 09:00:22 GMT',
+    'transfer-encoding': 'chunked',
+    connection: 'close, Transfer-Encoding'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602054?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:00:22.128] [INFO] devops-prov.openclient - Status code:  201
+[2026-05-01T11:00:22.128] [INFO] devops-prov.openclient - Body:  {
+  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602054?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"
+}
+[2026-05-01T11:00:22.129] [INFO] devops-prov.envionment - activation regex results:  [
+  '/papi/v1/properties/prp_884804/activations/atv_19602054',
+  'prp_',
+  'atv_',
+  '19602054',
+  index: 0,
+  input: '/papi/v1/properties/prp_884804/activations/atv_19602054?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  groups: undefined
+]
+[2026-05-01T11:07:02.643] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T11:07:02.643] [INFO] devops-prov.factory - Switching account key to: 'B-M-1YX7F48:1-8BYUX'
+[2026-05-01T11:07:02.643] [INFO] devops-prov.factory - Using credentials file: '/Users/jgrinwis/.edgerc', section: 'gss'
+[2026-05-01T11:07:02.644] [INFO] devops-prov - Settings file:  {
+  devopsHome: '/Users/jgrinwis/Projects/netlify/img',
+  outputFormat: 'table',
+  accountSwitchKey: 'B-M-1YX7F48:1-8BYUX',
+  edgeGridConfig: { path: '/Users/jgrinwis/.edgerc', section: 'gss' }
+}
+[2026-05-01T11:07:02.644] [INFO] devops-prov - emails for activation:  Set(1) { 'noreply@akamai.com' }
+[2026-05-01T11:07:02.644] [INFO] devops-prov.factory - need to create papi
+[2026-05-01T11:07:02.645] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2026-05-01T11:07:02.647] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:02+0000;nonce=43ae9cfc-8839-4434-871d-4fd1492065f1;
+
+[2026-05-01T11:07:02.647] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T11:07:02.647] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 33
+[2026-05-01T11:07:02.647] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"ew.grinwis.com"}"
+[2026-05-01T11:07:02.647] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"ew.grinwis.com"}
+[2026-05-01T11:07:02.648] [INFO] devops-prov.edgegrid.helpers - Content hash is "g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA="
+[2026-05-01T11:07:02.648] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX		g+raTcFwK/dEt4fLwXuXr5XyaXIAB9AdjzlGbmorcnA=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:02+0000;nonce=43ae9cfc-8839-4434-871d-4fd1492065f1;" 
+
+[2026-05-01T11:07:02.648] [INFO] devops-prov.edgegrid.helpers - Signing key: 5KSXes6O7KASoHbcMMusYViqUfh+9h13HCFtSKsQPe0=
+
+[2026-05-01T11:07:02.648] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:02+0000;nonce=43ae9cfc-8839-4434-871d-4fd1492065f1;signature=U7CmX4Hp90oXoS64afUMuiT/xPB7AGnPokRva0bcnJ0=
+
+[2026-05-01T11:07:02.669] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:02+0000;nonce=43ae9cfc-8839-4434-871d-4fd1492065f1;signature=U7CmX4Hp90oXoS64afUMuiT/xPB7AGnPokRva0bcnJ0=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 33
+  },
+  body: '{"propertyName":"ew.grinwis.com"}'
+}
+[2026-05-01T11:07:03.488] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '900f1a8e850200b9',
+    'x-ids-session-id': '9e55b173-f7d6-4a90-8959-d67465b1d64f, 9e55b173-f7d6-4a90-8959-d67465b1d64f',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2490',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '1282',
+    date: 'Fri, 01 May 2026 09:07:03 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 254,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T08:59:51Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 220,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2025-10-09T13:01:21Z",\n' +
+    '      "productionStatus" : "ACTIVE",\n' +
+    '      "stagingStatus" : "DEACTIVATED"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-M-1YX7F48",\n' +
+    '      "contractId" : "ctr_M-1YX7F61",\n' +
+    '      "assetId" : "aid_11120979",\n' +
+    '      "groupId" : "grp_93068",\n' +
+    '      "propertyId" : "prp_884804",\n' +
+    '      "propertyName" : "ew.grinwis.com",\n' +
+    '      "propertyVersion" : 255,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T09:06:50Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T11:07:03.489] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T11:07:03.489] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 254,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T08:59:51Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 220,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2025-10-09T13:01:21Z",
+      "productionStatus" : "ACTIVE",
+      "stagingStatus" : "DEACTIVATED"
+    }, {
+      "accountId" : "act_B-M-1YX7F48",
+      "contractId" : "ctr_M-1YX7F61",
+      "assetId" : "aid_11120979",
+      "groupId" : "grp_93068",
+      "propertyId" : "prp_884804",
+      "propertyName" : "ew.grinwis.com",
+      "propertyVersion" : 255,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T09:06:50Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2026-05-01T11:07:03.489] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/884804/versions/latest
+[2026-05-01T11:07:03.489] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:03+0000;nonce=1870b3a5-296e-4eb9-bac0-e80e2b18ca71;
+
+[2026-05-01T11:07:03.489] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:07:03.489] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:07:03.489] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:03+0000;nonce=1870b3a5-296e-4eb9-bac0-e80e2b18ca71;" 
+
+[2026-05-01T11:07:03.490] [INFO] devops-prov.edgegrid.helpers - Signing key: OAjDeciDVIeEYhc8Cx9lvN/wtniWk5kTdjDi0VgkOnQ=
+
+[2026-05-01T11:07:03.490] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:03+0000;nonce=1870b3a5-296e-4eb9-bac0-e80e2b18ca71;signature=07zQzcG1j3HrfeKprozv6AZl2+ADQpSfGVwkBl8qAG0=
+
+[2026-05-01T11:07:03.491] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/latest?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:03+0000;nonce=1870b3a5-296e-4eb9-bac0-e80e2b18ca71;signature=07zQzcG1j3HrfeKprozv6AZl2+ADQpSfGVwkBl8qAG0=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:07:04.012] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '73dae8967aaac447',
+    'x-ids-session-id': '44e73c6d-a763-4543-b816-4973a2d07b36, 44e73c6d-a763-4543-b816-4973a2d07b36',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2489',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/255?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '106',
+    date: 'Fri, 01 May 2026 09:07:03 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_884804/versions/255?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:07:04.014] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=34e19ab7-5bcc-479c-87ff-6ac2d9d2f2e7;
+
+[2026-05-01T11:07:04.014] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:07:04.014] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:07:04.014] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/versions/255?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=34e19ab7-5bcc-479c-87ff-6ac2d9d2f2e7;" 
+
+[2026-05-01T11:07:04.014] [INFO] devops-prov.edgegrid.helpers - Signing key: 1hQDvdS5h8YlbfCanL1Bc7db1W08WTHcVwWcRJsuG6I=
+
+[2026-05-01T11:07:04.014] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=34e19ab7-5bcc-479c-87ff-6ac2d9d2f2e7;signature=PfGM6ZPEHVJptxeoWxgjXbYCSeNDTXo45ZxDBYzbw7U=
+
+[2026-05-01T11:07:04.016] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/versions/255?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=34e19ab7-5bcc-479c-87ff-6ac2d9d2f2e7;signature=PfGM6ZPEHVJptxeoWxgjXbYCSeNDTXo45ZxDBYzbw7U=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:07:04.284] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '3a0787324b9f0f3c',
+    'x-ids-session-id': 'fdf2d9fd-3d54-4fb6-8801-9f7c45d6329c, fdf2d9fd-3d54-4fb6-8801-9f7c45d6329c',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2488',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/255?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '138',
+    date: 'Fri, 01 May 2026 09:07:04 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/884804/versions/255?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:07:04.285] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=224644cb-ce5e-4704-ab9b-c546a392aed3;
+
+[2026-05-01T11:07:04.285] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2026-05-01T11:07:04.285] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2026-05-01T11:07:04.285] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/884804/versions/255?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX			EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=224644cb-ce5e-4704-ab9b-c546a392aed3;" 
+
+[2026-05-01T11:07:04.285] [INFO] devops-prov.edgegrid.helpers - Signing key: 1hQDvdS5h8YlbfCanL1Bc7db1W08WTHcVwWcRJsuG6I=
+
+[2026-05-01T11:07:04.286] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=224644cb-ce5e-4704-ab9b-c546a392aed3;signature=xgWpvAA3zwk5Y6WvBb8sKGwdN5FRnjbi/3cC7qTr5Gc=
+
+[2026-05-01T11:07:04.287] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/884804/versions/255?groupId=93068&contractId=M-1YX7F61&accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:04+0000;nonce=224644cb-ce5e-4704-ab9b-c546a392aed3;signature=xgWpvAA3zwk5Y6WvBb8sKGwdN5FRnjbi/3cC7qTr5Gc=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net'
+  }
+}
+[2026-05-01T11:07:05.083] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': 'd0f66b9ba1f0ca32',
+    'x-ids-session-id': 'fdf2d9fd-3d54-4fb6-8801-9f7c45d6329c, fdf2d9fd-3d54-4fb6-8801-9f7c45d6329c',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2487',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '559',
+    date: 'Fri, 01 May 2026 09:07:04 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_884804",\n' +
+    '  "propertyName" : "ew.grinwis.com",\n' +
+    '  "accountId" : "act_B-M-1YX7F48",\n' +
+    '  "contractId" : "ctr_M-1YX7F61",\n' +
+    '  "groupId" : "grp_93068",\n' +
+    '  "assetId" : "aid_11120979",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 255,\n' +
+    '      "updatedByUser" : "jgrinwis",\n' +
+    '      "updatedDate" : "2026-05-01T09:06:50Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "6270c243689484f740e16ecca212f7dbd89bb145",\n' +
+    '      "productId" : "prd_Site_Accel",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2026-05-01T11:07:05.084] [INFO] devops-prov.openclient - Status code:  200
+[2026-05-01T11:07:05.084] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_884804",
+  "propertyName" : "ew.grinwis.com",
+  "accountId" : "act_B-M-1YX7F48",
+  "contractId" : "ctr_M-1YX7F61",
+  "groupId" : "grp_93068",
+  "assetId" : "aid_11120979",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 255,
+      "updatedByUser" : "jgrinwis",
+      "updatedDate" : "2026-05-01T09:06:50Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "6270c243689484f740e16ecca212f7dbd89bb145",
+      "productId" : "prd_Site_Accel",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2026-05-01T11:07:05.085] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties/prp_884804/activations
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:05+0000;nonce=79312869-749c-4daa-a3ea-53a4c3247c60;
+
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyVersion":255,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T11:07:05.086] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 247
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyVersion":255,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}"
+[2026-05-01T11:07:05.086] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyVersion":255,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.helpers - Content hash is "cS7BVQO+WwE5sQbMIkttkjAFi4dihmHsuZvzIeDTNZw="
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net	/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX		cS7BVQO+WwE5sQbMIkttkjAFi4dihmHsuZvzIeDTNZw=	EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:05+0000;nonce=79312869-749c-4daa-a3ea-53a4c3247c60;" 
+
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.helpers - Signing key: 9KUthhuu9ZiF42r0IEbOctXHv2vEkaDvLBPd+psipgM=
+
+[2026-05-01T11:07:05.086] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:05+0000;nonce=79312869-749c-4daa-a3ea-53a4c3247c60;signature=T09k20SdlvPVYFY4odE7ZASqkp0FIWvRD81h5RqPHUo=
+
+[2026-05-01T11:07:05.087] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations?accountSwitchKey=B-M-1YX7F48:1-8BYUX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-6mqts5mvn4yuys3x-53z5xvkgyiwro3di;access_token=akab-hy2fi6sv4apv2ht2-pgik3gwxxsfupvzr;timestamp=20260501T09:07:05+0000;nonce=79312869-749c-4daa-a3ea-53a4c3247c60;signature=T09k20SdlvPVYFY4odE7ZASqkp0FIWvRD81h5RqPHUo=',
+    host: 'akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net',
+    'content-length': 247
+  },
+  body: '{"propertyVersion":255,"network":"STAGING","note":"Property Manager CLI Activation","notifyEmails":["noreply@akamai.com"],"acknowledgeAllWarnings":true,"activationType":"ACTIVATE","complianceRecord":{"noncomplianceReason":"NO_PRODUCTION_TRAFFIC"}}'
+}
+[2026-05-01T11:07:18.196] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    'content-type': 'application/json',
+    'x-trace-id': '7d91c52836b6e586',
+    'x-ids-session-id': '44e73c6d-a763-4543-b816-4973a2d07b36, 44e73c6d-a763-4543-b816-4973a2d07b36',
+    'x-ratelimit-limit': '2500',
+    'x-ratelimit-remaining': '2486',
+    location: 'https://akab-jdn2ct6ewvfefhhb-csofinvorrtwiu5w.luna.akamaiapis.net/papi/v1/properties/prp_884804/activations/atv_19602092?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+    'x-ratelimit-activations-limit': '500',
+    'x-ratelimit-activations-remaining': '492',
+    'x-ratelimit-activations-reset': '2026-05-02T01:44:35Z',
+    vary: 'accept-encoding',
+    'papi-cache-status': 'CACHE_MISS',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'content-length': '121',
+    date: 'Fri, 01 May 2026 09:07:18 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602092?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"\n' +
+    '}'
+}
+[2026-05-01T11:07:18.197] [INFO] devops-prov.openclient - Status code:  201
+[2026-05-01T11:07:18.197] [INFO] devops-prov.openclient - Body:  {
+  "activationLink" : "/papi/v1/properties/prp_884804/activations/atv_19602092?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX"
+}
+[2026-05-01T11:07:18.197] [INFO] devops-prov.envionment - activation regex results:  [
+  '/papi/v1/properties/prp_884804/activations/atv_19602092',
+  'prp_',
+  'atv_',
+  '19602092',
+  index: 0,
+  input: '/papi/v1/properties/prp_884804/activations/atv_19602092?accountSwitchKey=B-M-1YX7F48%3A1-8BYUX',
+  groups: undefined
+]
